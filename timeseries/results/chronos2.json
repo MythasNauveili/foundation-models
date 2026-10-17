@@ -1,0 +1,28 @@
+{
+  "model_id": "amazon/chronos-2",
+  "revision": "29ec3766d36d6f73f0696f85560a422f50e8498c",
+  "library_version": "2.3.2",
+  "generated_at": "2026-10-17T14:10:27.675697+00:00",
+  "device": "cpu",
+  "dtype": "float32",
+  "dataset_sha256": {
+    "weather": "ddcc52b1275ecf8e9cb7c783d404ee2c4719b77f75faa27a8e0cdc1f0a871e3d",
+    "bikes": "b8377b25d97df2788b07da98ade26f8b4e0a2ac1bdb1756fec3e6612774ff110",
+    "retail": "ad11012d56f980413a3afb4d3c20de5ae9e041d64e6ff5d76ef7c757218b1eb2"
+  },
+  "inference_seconds": {
+    "weather": {
+      "Target only": 0.05643762499676086,
+      "With covariates": 0.06064562499523163
+    },
+    "bikes": {
+      "Target only": 0.03397424999275245,
+      "With covariates": 0.07810729200718924
+    },
+    "retail": {
+      "Target only": 0.024720291985431686,
+      "With covariates": 0.025385874992934987
+    }
+  },
+  "predictions_sha256": "83aab3c4065899ed8d4aab0e288090b793a3d25960bf226efa132b396a4e6e78"
+}
