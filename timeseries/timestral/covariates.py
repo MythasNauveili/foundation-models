@@ -17,8 +17,9 @@ def _():
 @app.cell
 def _(mo):
     mo.md("""
-    # Timestral-209M: adding covariates
+    # Timestral: adding covariates
     **Covariates** are extra signals that may help a forecast. A sensor is available only in the past; a planned schedule is known in advance. These calls still use the pretrained model without fine-tuning.
+    Change `size` below to use the same calls with any Timestral checkpoint.
     """)
     return
 
@@ -36,11 +37,17 @@ def _(np):
 
 @app.cell
 def _(TimestralForecaster):
+    size = "5M"  # Choose 5M, 28M, 123M, or 209M.
+    checkpoints = {
+        "5M": "bdd20cfc15a3fea0e4cb5ccef37f8d3ca7aa335f",
+        "28M": "180698bbf5a50dda3516aa6419798437fb03a430",
+        "123M": "5a147287addda85f6acd8da3fb8858fe9af7e8f7",
+        "209M": "9874d252ab0aae16f7f7c999f98f98d6ad7d8365",
+    }
     model = TimestralForecaster.from_pretrained(
-        "mistralai/Timestral-209M",
-        revision="9874d252ab0aae16f7f7c999f98f98d6ad7d8365", device="cpu",
+        f"mistralai/Timestral-{size}", revision=checkpoints[size], device="cpu",
     )
-    return (model,)
+    return model, size
 
 
 @app.cell
@@ -75,14 +82,14 @@ def _(history, model, past_sensor, schedule):
 
 
 @app.cell
-def _(past_only, plt, signal, time, with_future, zero_shot):
+def _(past_only, plt, signal, size, time, with_future, zero_shot):
     fig, ax = plt.subplots(figsize=(8, 4), layout="constrained")
     ax.plot(time[168:192], signal[168:192], color="#777777", label="History")
     ax.plot(time[192:], signal[192:], "o-", color="#111111", label="Actual", markersize=3)
     ax.plot(time[192:], zero_shot, ":", color="#777777", label="Target only")
     ax.plot(time[192:], past_only, "--", color="#2364AA", label="Past covariate")
     ax.plot(time[192:], with_future, color="#C15F14", label="Past + known future")
-    ax.set(title="Timestral-209M · covariates", xlabel="Time step", ylabel="Synthetic value")
+    ax.set(title=f"Timestral-{size} · covariates", xlabel="Time step", ylabel="Synthetic value")
     ax.legend(fontsize=9)
     fig
     return (fig,)

@@ -17,8 +17,9 @@ def _():
 @app.cell
 def _(mo):
     mo.md("""
-    # Timestral-209M: your first forecast
+    # Timestral: your first forecast
     A **pretrained** model has already learned from other series; **zero-shot** means forecasting this new series without training on it.
+    All four sizes share this API. Start with 5M; change `size` below to try another checkpoint.
     """)
     return
 
@@ -33,11 +34,17 @@ def _(np):
 
 @app.cell
 def _(TimestralForecaster):
+    size = "5M"  # Choose 5M, 28M, 123M, or 209M.
+    checkpoints = {
+        "5M": "bdd20cfc15a3fea0e4cb5ccef37f8d3ca7aa335f",
+        "28M": "180698bbf5a50dda3516aa6419798437fb03a430",
+        "123M": "5a147287addda85f6acd8da3fb8858fe9af7e8f7",
+        "209M": "9874d252ab0aae16f7f7c999f98f98d6ad7d8365",
+    }
     model = TimestralForecaster.from_pretrained(
-        "mistralai/Timestral-209M",
-        revision="9874d252ab0aae16f7f7c999f98f98d6ad7d8365", device="cpu",
+        f"mistralai/Timestral-{size}", revision=checkpoints[size], device="cpu",
     )
-    return (model,)
+    return model, size
 
 
 @app.cell
@@ -48,12 +55,12 @@ def _(history, model):
 
 
 @app.cell
-def _(history, plt, prediction, signal, time):
+def _(history, plt, prediction, signal, size, time):
     fig, ax = plt.subplots(figsize=(8, 4), layout="constrained")
     ax.plot(time[:192], history, color="#555555", label="History")
     ax.plot(time[192:], signal[192:], ":", color="#111111", label="Actual continuation")
     ax.plot(time[192:], prediction, "--", color="#2364AA", label="Forecast (median)")
-    ax.set(title="Timestral-209M · 24 steps ahead", xlabel="Time step", ylabel="Synthetic value")
+    ax.set(title=f"Timestral-{size} · 24 steps ahead", xlabel="Time step", ylabel="Synthetic value")
     ax.legend()
     fig
     return (fig,)

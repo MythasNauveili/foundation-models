@@ -1,0 +1,318 @@
+{
+  "schema_version": 2,
+  "cycles_sha256": "f4a6abaee1574c006be844a4ec3a3c3854cfa0db1e62c3756425e72407defa55",
+  "cycles": [
+    {
+      "dataset": "weather",
+      "forecast_start": "2025-01-25 00:00:00",
+      "history_length": 730,
+      "horizon": 7,
+      "seasonal_lag": 365,
+      "frequency": "D"
+    },
+    {
+      "dataset": "weather",
+      "forecast_start": "2025-02-22 00:00:00",
+      "history_length": 730,
+      "horizon": 7,
+      "seasonal_lag": 365,
+      "frequency": "D"
+    },
+    {
+      "dataset": "weather",
+      "forecast_start": "2025-03-25 00:00:00",
+      "history_length": 730,
+      "horizon": 7,
+      "seasonal_lag": 365,
+      "frequency": "D"
+    },
+    {
+      "dataset": "weather",
+      "forecast_start": "2025-04-24 00:00:00",
+      "history_length": 730,
+      "horizon": 7,
+      "seasonal_lag": 365,
+      "frequency": "D"
+    },
+    {
+      "dataset": "weather",
+      "forecast_start": "2025-05-25 00:00:00",
+      "history_length": 730,
+      "horizon": 7,
+      "seasonal_lag": 365,
+      "frequency": "D"
+    },
+    {
+      "dataset": "weather",
+      "forecast_start": "2025-06-24 00:00:00",
+      "history_length": 730,
+      "horizon": 7,
+      "seasonal_lag": 365,
+      "frequency": "D"
+    },
+    {
+      "dataset": "weather",
+      "forecast_start": "2025-07-25 00:00:00",
+      "history_length": 730,
+      "horizon": 7,
+      "seasonal_lag": 365,
+      "frequency": "D"
+    },
+    {
+      "dataset": "weather",
+      "forecast_start": "2025-08-25 00:00:00",
+      "history_length": 730,
+      "horizon": 7,
+      "seasonal_lag": 365,
+      "frequency": "D"
+    },
+    {
+      "dataset": "weather",
+      "forecast_start": "2025-09-24 00:00:00",
+      "history_length": 730,
+      "horizon": 7,
+      "seasonal_lag": 365,
+      "frequency": "D"
+    },
+    {
+      "dataset": "weather",
+      "forecast_start": "2025-10-25 00:00:00",
+      "history_length": 730,
+      "horizon": 7,
+      "seasonal_lag": 365,
+      "frequency": "D"
+    },
+    {
+      "dataset": "weather",
+      "forecast_start": "2025-11-24 00:00:00",
+      "history_length": 730,
+      "horizon": 7,
+      "seasonal_lag": 365,
+      "frequency": "D"
+    },
+    {
+      "dataset": "weather",
+      "forecast_start": "2025-12-25 00:00:00",
+      "history_length": 730,
+      "horizon": 7,
+      "seasonal_lag": 365,
+      "frequency": "D"
+    },
+    {
+      "dataset": "bikes",
+      "forecast_start": "2012-01-31 00:00:00",
+      "history_length": 4380,
+      "horizon": 12,
+      "seasonal_lag": 84,
+      "frequency": "2h"
+    },
+    {
+      "dataset": "bikes",
+      "forecast_start": "2012-02-28 00:00:00",
+      "history_length": 4380,
+      "horizon": 12,
+      "seasonal_lag": 84,
+      "frequency": "2h"
+    },
+    {
+      "dataset": "bikes",
+      "forecast_start": "2012-03-31 00:00:00",
+      "history_length": 4380,
+      "horizon": 12,
+      "seasonal_lag": 84,
+      "frequency": "2h"
+    },
+    {
+      "dataset": "bikes",
+      "forecast_start": "2012-04-30 00:00:00",
+      "history_length": 4380,
+      "horizon": 12,
+      "seasonal_lag": 84,
+      "frequency": "2h"
+    },
+    {
+      "dataset": "bikes",
+      "forecast_start": "2012-05-31 00:00:00",
+      "history_length": 4380,
+      "horizon": 12,
+      "seasonal_lag": 84,
+      "frequency": "2h"
+    },
+    {
+      "dataset": "bikes",
+      "forecast_start": "2012-06-30 00:00:00",
+      "history_length": 4380,
+      "horizon": 12,
+      "seasonal_lag": 84,
+      "frequency": "2h"
+    },
+    {
+      "dataset": "bikes",
+      "forecast_start": "2012-07-31 00:00:00",
+      "history_length": 4380,
+      "horizon": 12,
+      "seasonal_lag": 84,
+      "frequency": "2h"
+    },
+    {
+      "dataset": "bikes",
+      "forecast_start": "2012-08-31 00:00:00",
+      "history_length": 4380,
+      "horizon": 12,
+      "seasonal_lag": 84,
+      "frequency": "2h"
+    },
+    {
+      "dataset": "bikes",
+      "forecast_start": "2012-09-30 00:00:00",
+      "history_length": 4380,
+      "horizon": 12,
+      "seasonal_lag": 84,
+      "frequency": "2h"
+    },
+    {
+      "dataset": "bikes",
+      "forecast_start": "2012-10-31 00:00:00",
+      "history_length": 4380,
+      "horizon": 12,
+      "seasonal_lag": 84,
+      "frequency": "2h"
+    },
+    {
+      "dataset": "bikes",
+      "forecast_start": "2012-11-30 00:00:00",
+      "history_length": 4380,
+      "horizon": 12,
+      "seasonal_lag": 84,
+      "frequency": "2h"
+    },
+    {
+      "dataset": "bikes",
+      "forecast_start": "2012-12-31 00:00:00",
+      "history_length": 4380,
+      "horizon": 12,
+      "seasonal_lag": 84,
+      "frequency": "2h"
+    },
+    {
+      "dataset": "retail",
+      "forecast_start": "2024-01-01 00:00:00",
+      "history_length": 120,
+      "horizon": 6,
+      "seasonal_lag": 12,
+      "frequency": "MS"
+    },
+    {
+      "dataset": "retail",
+      "forecast_start": "2024-07-01 00:00:00",
+      "history_length": 120,
+      "horizon": 6,
+      "seasonal_lag": 12,
+      "frequency": "MS"
+    },
+    {
+      "dataset": "retail",
+      "forecast_start": "2025-01-01 00:00:00",
+      "history_length": 120,
+      "horizon": 6,
+      "seasonal_lag": 12,
+      "frequency": "MS"
+    },
+    {
+      "dataset": "retail",
+      "forecast_start": "2025-07-01 00:00:00",
+      "history_length": 120,
+      "horizon": 6,
+      "seasonal_lag": 12,
+      "frequency": "MS"
+    }
+  ],
+  "model_id": "mistralai/Timestral-209M",
+  "revision": "9874d252ab0aae16f7f7c999f98f98d6ad7d8365",
+  "library_version": "1.0.0",
+  "generated_at": "2026-10-17T17:06:45.119982+00:00",
+  "device": "cpu",
+  "dtype": "float32",
+  "dataset_sha256": {
+    "weather": "e20537dde842e99f126b85cc1f6a3b00477cf6e50e1404b9e311e1936c9a4f64",
+    "bikes": "5acf3bce28e380715c768347b9fa88315fdc36c17e0ac7f04f8fefdd730b1a1a",
+    "retail": "5a92cc2d64dd6a87acb9784ee20e4c696f64cf1c50c1a632fb5c05a422af9ed4"
+  },
+  "inference_seconds": {
+    "weather": {
+      "Target only": {
+        "2025-01-25 00:00:00": 0.07825199997751042,
+        "2025-02-22 00:00:00": 0.0765788329881616,
+        "2025-03-25 00:00:00": 0.07982529205037281,
+        "2025-04-24 00:00:00": 0.08008212503045797,
+        "2025-05-25 00:00:00": 0.07669558300403878,
+        "2025-06-24 00:00:00": 0.07661979098338634,
+        "2025-07-25 00:00:00": 0.07651154103223234,
+        "2025-08-25 00:00:00": 0.07575345900841057,
+        "2025-09-24 00:00:00": 0.07661879097577184,
+        "2025-10-25 00:00:00": 0.07636387494858354,
+        "2025-11-24 00:00:00": 0.0766761660343036,
+        "2025-12-25 00:00:00": 0.07557508297031745
+      },
+      "With covariates": {
+        "2025-01-25 00:00:00": 0.2198613330256194,
+        "2025-02-22 00:00:00": 0.224874000006821,
+        "2025-03-25 00:00:00": 0.2338185419794172,
+        "2025-04-24 00:00:00": 0.21317320899106562,
+        "2025-05-25 00:00:00": 0.2068657919880934,
+        "2025-06-24 00:00:00": 0.21672949998173863,
+        "2025-07-25 00:00:00": 0.22055341699160635,
+        "2025-08-25 00:00:00": 0.20707150001544505,
+        "2025-09-24 00:00:00": 0.2080642909859307,
+        "2025-10-25 00:00:00": 0.2060010409913957,
+        "2025-11-24 00:00:00": 0.20879370800685138,
+        "2025-12-25 00:00:00": 0.20591579098254442
+      }
+    },
+    "bikes": {
+      "Target only": {
+        "2012-01-31 00:00:00": 0.18492475000675768,
+        "2012-02-28 00:00:00": 0.1875573750003241,
+        "2012-03-31 00:00:00": 0.18290437501855195,
+        "2012-04-30 00:00:00": 0.18335850001312792,
+        "2012-05-31 00:00:00": 0.18732133304001763,
+        "2012-06-30 00:00:00": 0.18455479200929403,
+        "2012-07-31 00:00:00": 0.18836450000526384,
+        "2012-08-31 00:00:00": 0.1830900419736281,
+        "2012-09-30 00:00:00": 0.19280787504976615,
+        "2012-10-31 00:00:00": 0.18694320903159678,
+        "2012-11-30 00:00:00": 0.1901564160361886,
+        "2012-12-31 00:00:00": 0.18398941599298269
+      },
+      "With covariates": {
+        "2012-01-31 00:00:00": 1.3326710420078598,
+        "2012-02-28 00:00:00": 1.3168148749973625,
+        "2012-03-31 00:00:00": 1.3134416670072824,
+        "2012-04-30 00:00:00": 1.3299690409912728,
+        "2012-05-31 00:00:00": 1.316676083020866,
+        "2012-06-30 00:00:00": 1.3190784169710241,
+        "2012-07-31 00:00:00": 1.329885707993526,
+        "2012-08-31 00:00:00": 1.3174943329649977,
+        "2012-09-30 00:00:00": 1.3361528330133297,
+        "2012-10-31 00:00:00": 1.3184658749960363,
+        "2012-11-30 00:00:00": 1.3147301659919322,
+        "2012-12-31 00:00:00": 1.3337818749714643
+      }
+    },
+    "retail": {
+      "Target only": {
+        "2024-01-01 00:00:00": 0.08947112498572096,
+        "2024-07-01 00:00:00": 0.08628683403367177,
+        "2025-01-01 00:00:00": 0.08678658300777897,
+        "2025-07-01 00:00:00": 0.08661662501981482
+      },
+      "With covariates": {
+        "2024-01-01 00:00:00": 0.08063587499782443,
+        "2024-07-01 00:00:00": 0.08143270801519975,
+        "2025-01-01 00:00:00": 0.08067529101390392,
+        "2025-07-01 00:00:00": 0.08122195804025978
+      }
+    }
+  },
+  "predictions_sha256": "6857b381677221fa311d96740ba6a1b1942152ed6545bcec0da9c6d10659219a"
+}
