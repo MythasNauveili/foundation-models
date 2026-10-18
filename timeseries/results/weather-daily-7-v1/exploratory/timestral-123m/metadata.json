@@ -1,0 +1,469 @@
+{
+  "schema_version": 5,
+  "task_id": "weather-daily-7-v1",
+  "split": "exploratory",
+  "smoke": false,
+  "source_sha256": "e20537dde842e99f126b85cc1f6a3b00477cf6e50e1404b9e311e1936c9a4f64",
+  "schedule": [
+    {
+      "task": "weather-daily-7-v1",
+      "entity": "single",
+      "forecast_start": "2025-01-25 00:00:00",
+      "split": "exploratory"
+    },
+    {
+      "task": "weather-daily-7-v1",
+      "entity": "single",
+      "forecast_start": "2025-02-22 00:00:00",
+      "split": "exploratory"
+    },
+    {
+      "task": "weather-daily-7-v1",
+      "entity": "single",
+      "forecast_start": "2025-03-25 00:00:00",
+      "split": "exploratory"
+    },
+    {
+      "task": "weather-daily-7-v1",
+      "entity": "single",
+      "forecast_start": "2025-04-24 00:00:00",
+      "split": "exploratory"
+    },
+    {
+      "task": "weather-daily-7-v1",
+      "entity": "single",
+      "forecast_start": "2025-05-25 00:00:00",
+      "split": "exploratory"
+    },
+    {
+      "task": "weather-daily-7-v1",
+      "entity": "single",
+      "forecast_start": "2025-06-24 00:00:00",
+      "split": "exploratory"
+    },
+    {
+      "task": "weather-daily-7-v1",
+      "entity": "single",
+      "forecast_start": "2025-07-25 00:00:00",
+      "split": "exploratory"
+    },
+    {
+      "task": "weather-daily-7-v1",
+      "entity": "single",
+      "forecast_start": "2025-08-25 00:00:00",
+      "split": "exploratory"
+    },
+    {
+      "task": "weather-daily-7-v1",
+      "entity": "single",
+      "forecast_start": "2025-09-24 00:00:00",
+      "split": "exploratory"
+    },
+    {
+      "task": "weather-daily-7-v1",
+      "entity": "single",
+      "forecast_start": "2025-10-25 00:00:00",
+      "split": "exploratory"
+    },
+    {
+      "task": "weather-daily-7-v1",
+      "entity": "single",
+      "forecast_start": "2025-11-24 00:00:00",
+      "split": "exploratory"
+    },
+    {
+      "task": "weather-daily-7-v1",
+      "entity": "single",
+      "forecast_start": "2025-12-25 00:00:00",
+      "split": "exploratory"
+    }
+  ],
+  "model": {
+    "spec": {
+      "id": "timestral-123m",
+      "name": "Timestral-123M",
+      "checkpoint": "mistralai/Timestral-123M",
+      "revision": "5a147287addda85f6acd8da3fb8858fe9af7e8f7",
+      "library": "timestral",
+      "environment": "timestral",
+      "quantiles": [
+        0.1,
+        0.5,
+        0.9
+      ],
+      "settings": [
+        [
+          "device",
+          "cpu"
+        ],
+        [
+          "dtype",
+          "float32"
+        ],
+        [
+          "symmetric_averaging",
+          true
+        ],
+        [
+          "clip_nonnegative",
+          true
+        ],
+        [
+          "quantile_real_cap_k",
+          10000.0
+        ],
+        [
+          "per_shot_horizon_patches",
+          "checkpoint default"
+        ]
+      ]
+    },
+    "library_version": "1.0.0",
+    "lockfile_sha256": "37431bd870cfad3093faceb977b4848b226a6d1ea462c8d4f9d18a3c3a8e36fe"
+  },
+  "generated_at": "2026-10-17T21:42:32.792091+00:00",
+  "hardware": {
+    "system": "macOS-27.0.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "processor": "arm",
+    "torch_threads": 1,
+    "torch_version": "2.14.1",
+    "device": "cpu",
+    "dtype": "float32",
+    "entities_per_call": 1
+  },
+  "predictions_sha256": "29d98c6fa2185eab142cd794a236c0bf8c248c6d3f90e76e3e70053760aac7e4",
+  "task_contract": {
+    "input_version": 1,
+    "task": "weather-daily-7-v1",
+    "dataset": "weather",
+    "history_length": 730,
+    "horizon": 7,
+    "frequency": "D",
+    "utc": false,
+    "calendar_timezone": null,
+    "missing_policy": "native",
+    "tracks": {
+      "target_only": [
+        [],
+        []
+      ],
+      "calendar": [
+        [],
+        [
+          "day_of_year"
+        ]
+      ],
+      "past_observed": [
+        [
+          "precipitation_sum",
+          "wind_speed_10m_max"
+        ],
+        []
+      ],
+      "past_observed_calendar": [
+        [
+          "precipitation_sum",
+          "wind_speed_10m_max"
+        ],
+        [
+          "day_of_year"
+        ]
+      ]
+    }
+  },
+  "timings": [
+    {
+      "entity": "single",
+      "track": "target_only",
+      "forecast_start": "2025-01-25 00:00:00",
+      "seconds": 0.1609329999773763
+    },
+    {
+      "entity": "single",
+      "track": "target_only",
+      "forecast_start": "2025-02-22 00:00:00",
+      "seconds": 0.15077916701557115
+    },
+    {
+      "entity": "single",
+      "track": "target_only",
+      "forecast_start": "2025-03-25 00:00:00",
+      "seconds": 0.15209158399375156
+    },
+    {
+      "entity": "single",
+      "track": "target_only",
+      "forecast_start": "2025-04-24 00:00:00",
+      "seconds": 0.1526322920108214
+    },
+    {
+      "entity": "single",
+      "track": "target_only",
+      "forecast_start": "2025-05-25 00:00:00",
+      "seconds": 0.15163316600956023
+    },
+    {
+      "entity": "single",
+      "track": "target_only",
+      "forecast_start": "2025-06-24 00:00:00",
+      "seconds": 0.15156466700136662
+    },
+    {
+      "entity": "single",
+      "track": "target_only",
+      "forecast_start": "2025-07-25 00:00:00",
+      "seconds": 0.15227141696959734
+    },
+    {
+      "entity": "single",
+      "track": "target_only",
+      "forecast_start": "2025-08-25 00:00:00",
+      "seconds": 0.15106058400124311
+    },
+    {
+      "entity": "single",
+      "track": "target_only",
+      "forecast_start": "2025-09-24 00:00:00",
+      "seconds": 0.15284408297156915
+    },
+    {
+      "entity": "single",
+      "track": "target_only",
+      "forecast_start": "2025-10-25 00:00:00",
+      "seconds": 0.1517205000272952
+    },
+    {
+      "entity": "single",
+      "track": "target_only",
+      "forecast_start": "2025-11-24 00:00:00",
+      "seconds": 0.15338529198197648
+    },
+    {
+      "entity": "single",
+      "track": "target_only",
+      "forecast_start": "2025-12-25 00:00:00",
+      "seconds": 0.15209091699216515
+    },
+    {
+      "entity": "single",
+      "track": "calendar",
+      "forecast_start": "2025-01-25 00:00:00",
+      "seconds": 0.29862037498969585
+    },
+    {
+      "entity": "single",
+      "track": "calendar",
+      "forecast_start": "2025-02-22 00:00:00",
+      "seconds": 0.299966124992352
+    },
+    {
+      "entity": "single",
+      "track": "calendar",
+      "forecast_start": "2025-03-25 00:00:00",
+      "seconds": 0.30056958401110023
+    },
+    {
+      "entity": "single",
+      "track": "calendar",
+      "forecast_start": "2025-04-24 00:00:00",
+      "seconds": 0.29982899996684864
+    },
+    {
+      "entity": "single",
+      "track": "calendar",
+      "forecast_start": "2025-05-25 00:00:00",
+      "seconds": 0.2982343750190921
+    },
+    {
+      "entity": "single",
+      "track": "calendar",
+      "forecast_start": "2025-06-24 00:00:00",
+      "seconds": 0.2998123750439845
+    },
+    {
+      "entity": "single",
+      "track": "calendar",
+      "forecast_start": "2025-07-25 00:00:00",
+      "seconds": 0.10265133302891627
+    },
+    {
+      "entity": "single",
+      "track": "calendar",
+      "forecast_start": "2025-08-25 00:00:00",
+      "seconds": 0.08212629205081612
+    },
+    {
+      "entity": "single",
+      "track": "calendar",
+      "forecast_start": "2025-09-24 00:00:00",
+      "seconds": 0.0827260420192033
+    },
+    {
+      "entity": "single",
+      "track": "calendar",
+      "forecast_start": "2025-10-25 00:00:00",
+      "seconds": 0.08297979203052819
+    },
+    {
+      "entity": "single",
+      "track": "calendar",
+      "forecast_start": "2025-11-24 00:00:00",
+      "seconds": 0.0826172920060344
+    },
+    {
+      "entity": "single",
+      "track": "calendar",
+      "forecast_start": "2025-12-25 00:00:00",
+      "seconds": 0.08251491602277383
+    },
+    {
+      "entity": "single",
+      "track": "past_observed",
+      "forecast_start": "2025-01-25 00:00:00",
+      "seconds": 0.11344512499636039
+    },
+    {
+      "entity": "single",
+      "track": "past_observed",
+      "forecast_start": "2025-02-22 00:00:00",
+      "seconds": 0.11328141600824893
+    },
+    {
+      "entity": "single",
+      "track": "past_observed",
+      "forecast_start": "2025-03-25 00:00:00",
+      "seconds": 0.11345879203872755
+    },
+    {
+      "entity": "single",
+      "track": "past_observed",
+      "forecast_start": "2025-04-24 00:00:00",
+      "seconds": 0.11323445901507512
+    },
+    {
+      "entity": "single",
+      "track": "past_observed",
+      "forecast_start": "2025-05-25 00:00:00",
+      "seconds": 0.11689391598338261
+    },
+    {
+      "entity": "single",
+      "track": "past_observed",
+      "forecast_start": "2025-06-24 00:00:00",
+      "seconds": 0.11879366700304672
+    },
+    {
+      "entity": "single",
+      "track": "past_observed",
+      "forecast_start": "2025-07-25 00:00:00",
+      "seconds": 0.11913495801854879
+    },
+    {
+      "entity": "single",
+      "track": "past_observed",
+      "forecast_start": "2025-08-25 00:00:00",
+      "seconds": 0.11496049998095259
+    },
+    {
+      "entity": "single",
+      "track": "past_observed",
+      "forecast_start": "2025-09-24 00:00:00",
+      "seconds": 0.11458308302098885
+    },
+    {
+      "entity": "single",
+      "track": "past_observed",
+      "forecast_start": "2025-10-25 00:00:00",
+      "seconds": 0.11548716702964157
+    },
+    {
+      "entity": "single",
+      "track": "past_observed",
+      "forecast_start": "2025-11-24 00:00:00",
+      "seconds": 0.11324124998645857
+    },
+    {
+      "entity": "single",
+      "track": "past_observed",
+      "forecast_start": "2025-12-25 00:00:00",
+      "seconds": 0.11512279201997444
+    },
+    {
+      "entity": "single",
+      "track": "past_observed_calendar",
+      "forecast_start": "2025-01-25 00:00:00",
+      "seconds": 0.1348455420229584
+    },
+    {
+      "entity": "single",
+      "track": "past_observed_calendar",
+      "forecast_start": "2025-02-22 00:00:00",
+      "seconds": 0.1349748750217259
+    },
+    {
+      "entity": "single",
+      "track": "past_observed_calendar",
+      "forecast_start": "2025-03-25 00:00:00",
+      "seconds": 0.1358296669786796
+    },
+    {
+      "entity": "single",
+      "track": "past_observed_calendar",
+      "forecast_start": "2025-04-24 00:00:00",
+      "seconds": 0.13423583400435746
+    },
+    {
+      "entity": "single",
+      "track": "past_observed_calendar",
+      "forecast_start": "2025-05-25 00:00:00",
+      "seconds": 0.13417908397968858
+    },
+    {
+      "entity": "single",
+      "track": "past_observed_calendar",
+      "forecast_start": "2025-06-24 00:00:00",
+      "seconds": 0.1344554999959655
+    },
+    {
+      "entity": "single",
+      "track": "past_observed_calendar",
+      "forecast_start": "2025-07-25 00:00:00",
+      "seconds": 0.13523195794550702
+    },
+    {
+      "entity": "single",
+      "track": "past_observed_calendar",
+      "forecast_start": "2025-08-25 00:00:00",
+      "seconds": 0.13479220803128555
+    },
+    {
+      "entity": "single",
+      "track": "past_observed_calendar",
+      "forecast_start": "2025-09-24 00:00:00",
+      "seconds": 0.13459487503860146
+    },
+    {
+      "entity": "single",
+      "track": "past_observed_calendar",
+      "forecast_start": "2025-10-25 00:00:00",
+      "seconds": 0.13438200001837686
+    },
+    {
+      "entity": "single",
+      "track": "past_observed_calendar",
+      "forecast_start": "2025-11-24 00:00:00",
+      "seconds": 0.13447454205015674
+    },
+    {
+      "entity": "single",
+      "track": "past_observed_calendar",
+      "forecast_start": "2025-12-25 00:00:00",
+      "seconds": 0.1341712080175057
+    }
+  ],
+  "runtime": {
+    "max_context": 32768,
+    "per_shot_horizon_patches": 32
+  }
+}

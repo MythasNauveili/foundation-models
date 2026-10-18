@@ -3,9 +3,13 @@ name = "chronos2-playground"
 version = "0.1.0"
 requires-python = ">=3.12,<3.13"
 dependencies = [
+    "timeseries-evaluation",
     "chronos-forecasting>=2.2,<3",
     "marimo>=0.23,<1",
     "matplotlib>=3.10,<4",
     "numpy>=2,<3",
     "pandas>=2.2,<3",
 ]
+
+[tool.uv.sources]
+timeseries-evaluation = { path = "..", editable = true }

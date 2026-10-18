@@ -1,29 +1,275 @@
-dataset,forecast_start,history_length,horizon,seasonal_lag,frequency
-weather,2025-01-25 00:00:00,730,7,365,D
-weather,2025-02-22 00:00:00,730,7,365,D
-weather,2025-03-25 00:00:00,730,7,365,D
-weather,2025-04-24 00:00:00,730,7,365,D
-weather,2025-05-25 00:00:00,730,7,365,D
-weather,2025-06-24 00:00:00,730,7,365,D
-weather,2025-07-25 00:00:00,730,7,365,D
-weather,2025-08-25 00:00:00,730,7,365,D
-weather,2025-09-24 00:00:00,730,7,365,D
-weather,2025-10-25 00:00:00,730,7,365,D
-weather,2025-11-24 00:00:00,730,7,365,D
-weather,2025-12-25 00:00:00,730,7,365,D
-bikes,2012-01-31 00:00:00,4380,12,84,2h
-bikes,2012-02-28 00:00:00,4380,12,84,2h
-bikes,2012-03-31 00:00:00,4380,12,84,2h
-bikes,2012-04-30 00:00:00,4380,12,84,2h
-bikes,2012-05-31 00:00:00,4380,12,84,2h
-bikes,2012-06-30 00:00:00,4380,12,84,2h
-bikes,2012-07-31 00:00:00,4380,12,84,2h
-bikes,2012-08-31 00:00:00,4380,12,84,2h
-bikes,2012-09-30 00:00:00,4380,12,84,2h
-bikes,2012-10-31 00:00:00,4380,12,84,2h
-bikes,2012-11-30 00:00:00,4380,12,84,2h
-bikes,2012-12-31 00:00:00,4380,12,84,2h
-retail,2024-01-01 00:00:00,120,6,12,MS
-retail,2024-07-01 00:00:00,120,6,12,MS
-retail,2025-01-01 00:00:00,120,6,12,MS
-retail,2025-07-01 00:00:00,120,6,12,MS
+task,entity,forecast_start,split
+weather-daily-7-v1,single,2025-01-25 00:00:00,exploratory
+weather-daily-7-v1,single,2025-02-22 00:00:00,exploratory
+weather-daily-7-v1,single,2025-03-25 00:00:00,exploratory
+weather-daily-7-v1,single,2025-04-24 00:00:00,exploratory
+weather-daily-7-v1,single,2025-05-25 00:00:00,exploratory
+weather-daily-7-v1,single,2025-06-24 00:00:00,exploratory
+weather-daily-7-v1,single,2025-07-25 00:00:00,exploratory
+weather-daily-7-v1,single,2025-08-25 00:00:00,exploratory
+weather-daily-7-v1,single,2025-09-24 00:00:00,exploratory
+weather-daily-7-v1,single,2025-10-25 00:00:00,exploratory
+weather-daily-7-v1,single,2025-11-24 00:00:00,exploratory
+weather-daily-7-v1,single,2025-12-25 00:00:00,exploratory
+bikes-2hourly-12-v1,single,2012-01-31 00:00:00,exploratory
+bikes-2hourly-12-v1,single,2012-02-28 00:00:00,exploratory
+bikes-2hourly-12-v1,single,2012-03-31 00:00:00,exploratory
+bikes-2hourly-12-v1,single,2012-04-30 00:00:00,exploratory
+bikes-2hourly-12-v1,single,2012-05-31 00:00:00,exploratory
+bikes-2hourly-12-v1,single,2012-06-30 00:00:00,exploratory
+bikes-2hourly-12-v1,single,2012-07-31 00:00:00,exploratory
+bikes-2hourly-12-v1,single,2012-08-31 00:00:00,exploratory
+bikes-2hourly-12-v1,single,2012-09-30 00:00:00,exploratory
+bikes-2hourly-12-v1,single,2012-10-31 00:00:00,exploratory
+bikes-2hourly-12-v1,single,2012-11-30 00:00:00,exploratory
+bikes-2hourly-12-v1,single,2012-12-31 00:00:00,exploratory
+retail-monthly-6-v1,single,2024-01-01 00:00:00,exploratory
+retail-monthly-6-v1,single,2024-07-01 00:00:00,exploratory
+retail-monthly-6-v1,single,2025-01-01 00:00:00,exploratory
+retail-monthly-6-v1,single,2025-07-01 00:00:00,exploratory
+rte-hourly-24-v1,44,2024-01-08T00:00:00+00:00,development
+rte-hourly-24-v1,44,2024-01-22T00:00:00+00:00,development
+rte-hourly-24-v1,44,2024-02-08T00:00:00+00:00,development
+rte-hourly-24-v1,44,2024-02-22T00:00:00+00:00,development
+rte-hourly-24-v1,44,2024-03-08T00:00:00+00:00,development
+rte-hourly-24-v1,44,2024-03-22T00:00:00+00:00,development
+rte-hourly-24-v1,44,2024-04-08T00:00:00+00:00,development
+rte-hourly-24-v1,44,2024-04-22T00:00:00+00:00,development
+rte-hourly-24-v1,44,2024-05-08T00:00:00+00:00,development
+rte-hourly-24-v1,44,2024-05-22T00:00:00+00:00,development
+rte-hourly-24-v1,44,2024-06-08T00:00:00+00:00,development
+rte-hourly-24-v1,44,2024-06-22T00:00:00+00:00,development
+rte-hourly-24-v1,44,2024-07-08T00:00:00+00:00,development
+rte-hourly-24-v1,44,2024-07-22T00:00:00+00:00,development
+rte-hourly-24-v1,44,2024-08-08T00:00:00+00:00,development
+rte-hourly-24-v1,44,2024-08-22T00:00:00+00:00,development
+rte-hourly-24-v1,44,2024-09-08T00:00:00+00:00,development
+rte-hourly-24-v1,44,2024-09-22T00:00:00+00:00,development
+rte-hourly-24-v1,44,2024-10-08T00:00:00+00:00,development
+rte-hourly-24-v1,44,2024-10-22T00:00:00+00:00,development
+rte-hourly-24-v1,44,2025-01-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,44,2025-01-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,44,2025-02-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,44,2025-02-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,44,2025-03-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,44,2025-03-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,44,2025-04-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,44,2025-04-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,44,2025-05-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,44,2025-05-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,44,2025-06-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,44,2025-06-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,44,2025-07-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,44,2025-07-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,44,2025-08-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,44,2025-08-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,44,2025-09-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,44,2025-09-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,44,2025-10-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,44,2025-10-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,44,2025-12-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,53,2024-01-08T00:00:00+00:00,development
+rte-hourly-24-v1,53,2024-01-22T00:00:00+00:00,development
+rte-hourly-24-v1,53,2024-02-08T00:00:00+00:00,development
+rte-hourly-24-v1,53,2024-02-22T00:00:00+00:00,development
+rte-hourly-24-v1,53,2024-03-08T00:00:00+00:00,development
+rte-hourly-24-v1,53,2024-03-22T00:00:00+00:00,development
+rte-hourly-24-v1,53,2024-04-08T00:00:00+00:00,development
+rte-hourly-24-v1,53,2024-04-22T00:00:00+00:00,development
+rte-hourly-24-v1,53,2024-05-08T00:00:00+00:00,development
+rte-hourly-24-v1,53,2024-05-22T00:00:00+00:00,development
+rte-hourly-24-v1,53,2024-06-08T00:00:00+00:00,development
+rte-hourly-24-v1,53,2024-06-22T00:00:00+00:00,development
+rte-hourly-24-v1,53,2024-07-08T00:00:00+00:00,development
+rte-hourly-24-v1,53,2024-07-22T00:00:00+00:00,development
+rte-hourly-24-v1,53,2024-08-08T00:00:00+00:00,development
+rte-hourly-24-v1,53,2024-08-22T00:00:00+00:00,development
+rte-hourly-24-v1,53,2024-09-08T00:00:00+00:00,development
+rte-hourly-24-v1,53,2024-09-22T00:00:00+00:00,development
+rte-hourly-24-v1,53,2024-10-08T00:00:00+00:00,development
+rte-hourly-24-v1,53,2024-10-22T00:00:00+00:00,development
+rte-hourly-24-v1,53,2025-01-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,53,2025-01-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,53,2025-02-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,53,2025-02-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,53,2025-03-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,53,2025-03-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,53,2025-04-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,53,2025-04-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,53,2025-05-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,53,2025-05-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,53,2025-06-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,53,2025-06-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,53,2025-07-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,53,2025-07-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,53,2025-08-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,53,2025-08-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,53,2025-09-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,53,2025-09-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,53,2025-10-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,53,2025-10-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,53,2025-12-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,11,2024-01-08T00:00:00+00:00,development
+rte-hourly-24-v1,11,2024-01-22T00:00:00+00:00,development
+rte-hourly-24-v1,11,2024-02-08T00:00:00+00:00,development
+rte-hourly-24-v1,11,2024-02-22T00:00:00+00:00,development
+rte-hourly-24-v1,11,2024-03-08T00:00:00+00:00,development
+rte-hourly-24-v1,11,2024-03-22T00:00:00+00:00,development
+rte-hourly-24-v1,11,2024-04-08T00:00:00+00:00,development
+rte-hourly-24-v1,11,2024-04-22T00:00:00+00:00,development
+rte-hourly-24-v1,11,2024-05-08T00:00:00+00:00,development
+rte-hourly-24-v1,11,2024-05-22T00:00:00+00:00,development
+rte-hourly-24-v1,11,2024-06-08T00:00:00+00:00,development
+rte-hourly-24-v1,11,2024-06-22T00:00:00+00:00,development
+rte-hourly-24-v1,11,2024-07-08T00:00:00+00:00,development
+rte-hourly-24-v1,11,2024-07-22T00:00:00+00:00,development
+rte-hourly-24-v1,11,2024-08-08T00:00:00+00:00,development
+rte-hourly-24-v1,11,2024-08-22T00:00:00+00:00,development
+rte-hourly-24-v1,11,2024-09-08T00:00:00+00:00,development
+rte-hourly-24-v1,11,2024-09-22T00:00:00+00:00,development
+rte-hourly-24-v1,11,2024-10-08T00:00:00+00:00,development
+rte-hourly-24-v1,11,2024-10-22T00:00:00+00:00,development
+rte-hourly-24-v1,11,2025-01-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,11,2025-01-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,11,2025-02-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,11,2025-02-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,11,2025-03-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,11,2025-03-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,11,2025-04-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,11,2025-04-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,11,2025-05-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,11,2025-05-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,11,2025-06-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,11,2025-06-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,11,2025-07-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,11,2025-07-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,11,2025-08-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,11,2025-08-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,11,2025-09-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,11,2025-09-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,11,2025-10-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,11,2025-10-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,11,2025-12-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,76,2024-01-08T00:00:00+00:00,development
+rte-hourly-24-v1,76,2024-01-22T00:00:00+00:00,development
+rte-hourly-24-v1,76,2024-02-08T00:00:00+00:00,development
+rte-hourly-24-v1,76,2024-02-22T00:00:00+00:00,development
+rte-hourly-24-v1,76,2024-03-08T00:00:00+00:00,development
+rte-hourly-24-v1,76,2024-03-22T00:00:00+00:00,development
+rte-hourly-24-v1,76,2024-04-08T00:00:00+00:00,development
+rte-hourly-24-v1,76,2024-04-22T00:00:00+00:00,development
+rte-hourly-24-v1,76,2024-05-08T00:00:00+00:00,development
+rte-hourly-24-v1,76,2024-05-22T00:00:00+00:00,development
+rte-hourly-24-v1,76,2024-06-08T00:00:00+00:00,development
+rte-hourly-24-v1,76,2024-06-22T00:00:00+00:00,development
+rte-hourly-24-v1,76,2024-07-08T00:00:00+00:00,development
+rte-hourly-24-v1,76,2024-07-22T00:00:00+00:00,development
+rte-hourly-24-v1,76,2024-08-08T00:00:00+00:00,development
+rte-hourly-24-v1,76,2024-08-22T00:00:00+00:00,development
+rte-hourly-24-v1,76,2024-09-08T00:00:00+00:00,development
+rte-hourly-24-v1,76,2024-09-22T00:00:00+00:00,development
+rte-hourly-24-v1,76,2024-10-08T00:00:00+00:00,development
+rte-hourly-24-v1,76,2024-10-22T00:00:00+00:00,development
+rte-hourly-24-v1,76,2025-01-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,76,2025-01-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,76,2025-02-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,76,2025-02-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,76,2025-03-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,76,2025-03-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,76,2025-04-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,76,2025-04-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,76,2025-05-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,76,2025-05-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,76,2025-06-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,76,2025-06-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,76,2025-07-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,76,2025-07-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,76,2025-08-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,76,2025-08-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,76,2025-09-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,76,2025-09-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,76,2025-10-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,76,2025-10-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,76,2025-12-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,32,2024-01-08T00:00:00+00:00,development
+rte-hourly-24-v1,32,2024-01-22T00:00:00+00:00,development
+rte-hourly-24-v1,32,2024-02-08T00:00:00+00:00,development
+rte-hourly-24-v1,32,2024-02-22T00:00:00+00:00,development
+rte-hourly-24-v1,32,2024-03-08T00:00:00+00:00,development
+rte-hourly-24-v1,32,2024-03-22T00:00:00+00:00,development
+rte-hourly-24-v1,32,2024-04-08T00:00:00+00:00,development
+rte-hourly-24-v1,32,2024-04-22T00:00:00+00:00,development
+rte-hourly-24-v1,32,2024-05-08T00:00:00+00:00,development
+rte-hourly-24-v1,32,2024-05-22T00:00:00+00:00,development
+rte-hourly-24-v1,32,2024-06-08T00:00:00+00:00,development
+rte-hourly-24-v1,32,2024-06-22T00:00:00+00:00,development
+rte-hourly-24-v1,32,2024-07-08T00:00:00+00:00,development
+rte-hourly-24-v1,32,2024-07-22T00:00:00+00:00,development
+rte-hourly-24-v1,32,2024-08-08T00:00:00+00:00,development
+rte-hourly-24-v1,32,2024-08-22T00:00:00+00:00,development
+rte-hourly-24-v1,32,2024-09-08T00:00:00+00:00,development
+rte-hourly-24-v1,32,2024-09-22T00:00:00+00:00,development
+rte-hourly-24-v1,32,2024-10-08T00:00:00+00:00,development
+rte-hourly-24-v1,32,2024-10-22T00:00:00+00:00,development
+rte-hourly-24-v1,32,2025-01-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,32,2025-01-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,32,2025-02-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,32,2025-02-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,32,2025-03-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,32,2025-03-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,32,2025-04-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,32,2025-04-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,32,2025-05-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,32,2025-05-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,32,2025-06-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,32,2025-06-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,32,2025-07-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,32,2025-07-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,32,2025-08-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,32,2025-08-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,32,2025-09-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,32,2025-09-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,32,2025-10-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,32,2025-10-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,32,2025-12-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,93,2024-01-08T00:00:00+00:00,development
+rte-hourly-24-v1,93,2024-01-22T00:00:00+00:00,development
+rte-hourly-24-v1,93,2024-02-08T00:00:00+00:00,development
+rte-hourly-24-v1,93,2024-02-22T00:00:00+00:00,development
+rte-hourly-24-v1,93,2024-03-08T00:00:00+00:00,development
+rte-hourly-24-v1,93,2024-03-22T00:00:00+00:00,development
+rte-hourly-24-v1,93,2024-04-08T00:00:00+00:00,development
+rte-hourly-24-v1,93,2024-04-22T00:00:00+00:00,development
+rte-hourly-24-v1,93,2024-05-08T00:00:00+00:00,development
+rte-hourly-24-v1,93,2024-05-22T00:00:00+00:00,development
+rte-hourly-24-v1,93,2024-06-08T00:00:00+00:00,development
+rte-hourly-24-v1,93,2024-06-22T00:00:00+00:00,development
+rte-hourly-24-v1,93,2024-07-08T00:00:00+00:00,development
+rte-hourly-24-v1,93,2024-07-22T00:00:00+00:00,development
+rte-hourly-24-v1,93,2024-08-08T00:00:00+00:00,development
+rte-hourly-24-v1,93,2024-08-22T00:00:00+00:00,development
+rte-hourly-24-v1,93,2024-09-08T00:00:00+00:00,development
+rte-hourly-24-v1,93,2024-09-22T00:00:00+00:00,development
+rte-hourly-24-v1,93,2024-10-08T00:00:00+00:00,development
+rte-hourly-24-v1,93,2024-10-22T00:00:00+00:00,development
+rte-hourly-24-v1,93,2025-01-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,93,2025-01-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,93,2025-02-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,93,2025-02-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,93,2025-03-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,93,2025-03-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,93,2025-04-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,93,2025-04-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,93,2025-05-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,93,2025-05-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,93,2025-06-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,93,2025-06-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,93,2025-07-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,93,2025-07-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,93,2025-08-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,93,2025-08-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,93,2025-09-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,93,2025-09-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,93,2025-10-08T00:00:00+00:00,evaluation
+rte-hourly-24-v1,93,2025-10-22T00:00:00+00:00,evaluation
+rte-hourly-24-v1,93,2025-12-22T00:00:00+00:00,evaluation

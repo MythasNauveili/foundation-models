@@ -1,0 +1,431 @@
+{
+  "schema_version": 1,
+  "prediction_rows": 33600,
+  "inference_calls": 1720,
+  "validated_bundles": 20,
+  "source_sha256": {
+    "retail_monthly.csv": "5a92cc2d64dd6a87acb9784ee20e4c696f64cf1c50c1a632fb5c05a422af9ed4",
+    "bikes_2hourly.csv": "5acf3bce28e380715c768347b9fa88315fdc36c17e0ac7f04f8fefdd730b1a1a",
+    "rte_hourly.csv": "adb625e9f10fda3c872044f006ff0217bff1604ff45bf580c7debdd379a20bf8",
+    "strasbourg_daily.csv": "e20537dde842e99f126b85cc1f6a3b00477cf6e50e1404b9e311e1936c9a4f64"
+  },
+  "rtol": 1e-05,
+  "atol": 1e-06,
+  "comparisons": [
+    {
+      "task": "weather-daily-7-v1",
+      "model": "chronos2",
+      "track": "target_only",
+      "rows": 84,
+      "legacy_sha256": "ddfa552960b098b92a0f3d9e262ce2e6ce256a430f9292ef31c3589ef9056524",
+      "within_requested_tolerance": true,
+      "quantiles_outside_tolerance": 0,
+      "max_absolute_quantile_difference": 0.0,
+      "absolute_pooled_mae_difference": 0.0
+    },
+    {
+      "task": "weather-daily-7-v1",
+      "model": "chronos2",
+      "track": "past_observed_calendar",
+      "rows": 84,
+      "legacy_sha256": "ddfa552960b098b92a0f3d9e262ce2e6ce256a430f9292ef31c3589ef9056524",
+      "within_requested_tolerance": true,
+      "quantiles_outside_tolerance": 0,
+      "max_absolute_quantile_difference": 0.0,
+      "absolute_pooled_mae_difference": 0.0
+    },
+    {
+      "task": "weather-daily-7-v1",
+      "model": "timestral-5m",
+      "track": "target_only",
+      "rows": 84,
+      "legacy_sha256": "665137dd82964750dcdda854310cede139f5b87aea741a7171d5479289982290",
+      "within_requested_tolerance": true,
+      "quantiles_outside_tolerance": 0,
+      "max_absolute_quantile_difference": 0.0,
+      "absolute_pooled_mae_difference": 0.0
+    },
+    {
+      "task": "weather-daily-7-v1",
+      "model": "timestral-5m",
+      "track": "past_observed_calendar",
+      "rows": 84,
+      "legacy_sha256": "665137dd82964750dcdda854310cede139f5b87aea741a7171d5479289982290",
+      "within_requested_tolerance": true,
+      "quantiles_outside_tolerance": 0,
+      "max_absolute_quantile_difference": 0.0,
+      "absolute_pooled_mae_difference": 0.0
+    },
+    {
+      "task": "weather-daily-7-v1",
+      "model": "timestral-28m",
+      "track": "target_only",
+      "rows": 84,
+      "legacy_sha256": "3b596684313226404f375cb7ac943fb62c4fea26e82ddf558fe8ddd513e087c2",
+      "within_requested_tolerance": true,
+      "quantiles_outside_tolerance": 0,
+      "max_absolute_quantile_difference": 0.0,
+      "absolute_pooled_mae_difference": 0.0
+    },
+    {
+      "task": "weather-daily-7-v1",
+      "model": "timestral-28m",
+      "track": "past_observed_calendar",
+      "rows": 84,
+      "legacy_sha256": "3b596684313226404f375cb7ac943fb62c4fea26e82ddf558fe8ddd513e087c2",
+      "within_requested_tolerance": true,
+      "quantiles_outside_tolerance": 0,
+      "max_absolute_quantile_difference": 1.1444091800427714e-05,
+      "absolute_pooled_mae_difference": 5.676632941487014e-09
+    },
+    {
+      "task": "weather-daily-7-v1",
+      "model": "timestral-123m",
+      "track": "target_only",
+      "rows": 84,
+      "legacy_sha256": "48153f8488c0fbba97bc0c3056104914af5c4d6237a83509cc8db6cd91b4eb05",
+      "within_requested_tolerance": true,
+      "quantiles_outside_tolerance": 0,
+      "max_absolute_quantile_difference": 0.0,
+      "absolute_pooled_mae_difference": 0.0
+    },
+    {
+      "task": "weather-daily-7-v1",
+      "model": "timestral-123m",
+      "track": "past_observed_calendar",
+      "rows": 84,
+      "legacy_sha256": "48153f8488c0fbba97bc0c3056104914af5c4d6237a83509cc8db6cd91b4eb05",
+      "within_requested_tolerance": true,
+      "quantiles_outside_tolerance": 0,
+      "max_absolute_quantile_difference": 7.62939453125e-06,
+      "absolute_pooled_mae_difference": 8.514949234594837e-08
+    },
+    {
+      "task": "weather-daily-7-v1",
+      "model": "timestral-209m",
+      "track": "target_only",
+      "rows": 84,
+      "legacy_sha256": "6857b381677221fa311d96740ba6a1b1942152ed6545bcec0da9c6d10659219a",
+      "within_requested_tolerance": true,
+      "quantiles_outside_tolerance": 0,
+      "max_absolute_quantile_difference": 0.0,
+      "absolute_pooled_mae_difference": 0.0
+    },
+    {
+      "task": "weather-daily-7-v1",
+      "model": "timestral-209m",
+      "track": "past_observed_calendar",
+      "rows": 84,
+      "legacy_sha256": "6857b381677221fa311d96740ba6a1b1942152ed6545bcec0da9c6d10659219a",
+      "within_requested_tolerance": true,
+      "quantiles_outside_tolerance": 0,
+      "max_absolute_quantile_difference": 7.62939453125e-06,
+      "absolute_pooled_mae_difference": 9.65027582289224e-08
+    },
+    {
+      "task": "bikes-2hourly-12-v1",
+      "model": "chronos2",
+      "track": "target_only",
+      "rows": 144,
+      "legacy_sha256": "ddfa552960b098b92a0f3d9e262ce2e6ce256a430f9292ef31c3589ef9056524",
+      "within_requested_tolerance": false,
+      "quantiles_outside_tolerance": 1,
+      "max_absolute_quantile_difference": 0.00048828125,
+      "absolute_pooled_mae_difference": 8.477105026827303e-07
+    },
+    {
+      "task": "bikes-2hourly-12-v1",
+      "model": "chronos2",
+      "track": "past_observed_calendar",
+      "rows": 144,
+      "legacy_sha256": "ddfa552960b098b92a0f3d9e262ce2e6ce256a430f9292ef31c3589ef9056524",
+      "within_requested_tolerance": false,
+      "quantiles_outside_tolerance": 1,
+      "max_absolute_quantile_difference": 0.000732421875,
+      "absolute_pooled_mae_difference": 1.960330538963717e-05
+    },
+    {
+      "task": "bikes-2hourly-12-v1",
+      "model": "timestral-5m",
+      "track": "target_only",
+      "rows": 144,
+      "legacy_sha256": "665137dd82964750dcdda854310cede139f5b87aea741a7171d5479289982290",
+      "within_requested_tolerance": true,
+      "quantiles_outside_tolerance": 0,
+      "max_absolute_quantile_difference": 0.0,
+      "absolute_pooled_mae_difference": 0.0
+    },
+    {
+      "task": "bikes-2hourly-12-v1",
+      "model": "timestral-5m",
+      "track": "past_observed_calendar",
+      "rows": 144,
+      "legacy_sha256": "665137dd82964750dcdda854310cede139f5b87aea741a7171d5479289982290",
+      "within_requested_tolerance": false,
+      "quantiles_outside_tolerance": 7,
+      "max_absolute_quantile_difference": 0.0009765625,
+      "absolute_pooled_mae_difference": 1.6424391020564144e-06
+    },
+    {
+      "task": "bikes-2hourly-12-v1",
+      "model": "timestral-28m",
+      "track": "target_only",
+      "rows": 144,
+      "legacy_sha256": "3b596684313226404f375cb7ac943fb62c4fea26e82ddf558fe8ddd513e087c2",
+      "within_requested_tolerance": false,
+      "quantiles_outside_tolerance": 4,
+      "max_absolute_quantile_difference": 0.001220703125,
+      "absolute_pooled_mae_difference": 1.976225109956431e-05
+    },
+    {
+      "task": "bikes-2hourly-12-v1",
+      "model": "timestral-28m",
+      "track": "past_observed_calendar",
+      "rows": 144,
+      "legacy_sha256": "3b596684313226404f375cb7ac943fb62c4fea26e82ddf558fe8ddd513e087c2",
+      "within_requested_tolerance": false,
+      "quantiles_outside_tolerance": 13,
+      "max_absolute_quantile_difference": 0.0009765625,
+      "absolute_pooled_mae_difference": 2.2570292159684868e-05
+    },
+    {
+      "task": "bikes-2hourly-12-v1",
+      "model": "timestral-123m",
+      "track": "target_only",
+      "rows": 144,
+      "legacy_sha256": "48153f8488c0fbba97bc0c3056104914af5c4d6237a83509cc8db6cd91b4eb05",
+      "within_requested_tolerance": false,
+      "quantiles_outside_tolerance": 4,
+      "max_absolute_quantile_difference": 0.0006103515625,
+      "absolute_pooled_mae_difference": 2.214643690479079e-05
+    },
+    {
+      "task": "bikes-2hourly-12-v1",
+      "model": "timestral-123m",
+      "track": "past_observed_calendar",
+      "rows": 144,
+      "legacy_sha256": "48153f8488c0fbba97bc0c3056104914af5c4d6237a83509cc8db6cd91b4eb05",
+      "within_requested_tolerance": false,
+      "quantiles_outside_tolerance": 7,
+      "max_absolute_quantile_difference": 0.0010375976561363132,
+      "absolute_pooled_mae_difference": 2.7921464706537336e-05
+    },
+    {
+      "task": "bikes-2hourly-12-v1",
+      "model": "timestral-209m",
+      "track": "target_only",
+      "rows": 144,
+      "legacy_sha256": "6857b381677221fa311d96740ba6a1b1942152ed6545bcec0da9c6d10659219a",
+      "within_requested_tolerance": false,
+      "quantiles_outside_tolerance": 1,
+      "max_absolute_quantile_difference": 0.000732421875,
+      "absolute_pooled_mae_difference": 3.761715362315954e-06
+    },
+    {
+      "task": "bikes-2hourly-12-v1",
+      "model": "timestral-209m",
+      "track": "past_observed_calendar",
+      "rows": 144,
+      "legacy_sha256": "6857b381677221fa311d96740ba6a1b1942152ed6545bcec0da9c6d10659219a",
+      "within_requested_tolerance": false,
+      "quantiles_outside_tolerance": 1,
+      "max_absolute_quantile_difference": 0.00054931640625,
+      "absolute_pooled_mae_difference": 1.4887915710914967e-05
+    },
+    {
+      "task": "retail-monthly-6-v1",
+      "model": "chronos2",
+      "track": "target_only",
+      "rows": 24,
+      "legacy_sha256": "ddfa552960b098b92a0f3d9e262ce2e6ce256a430f9292ef31c3589ef9056524",
+      "within_requested_tolerance": true,
+      "quantiles_outside_tolerance": 0,
+      "max_absolute_quantile_difference": 0.0,
+      "absolute_pooled_mae_difference": 0.0
+    },
+    {
+      "task": "retail-monthly-6-v1",
+      "model": "chronos2",
+      "track": "calendar",
+      "rows": 24,
+      "legacy_sha256": "ddfa552960b098b92a0f3d9e262ce2e6ce256a430f9292ef31c3589ef9056524",
+      "within_requested_tolerance": true,
+      "quantiles_outside_tolerance": 0,
+      "max_absolute_quantile_difference": 0.0,
+      "absolute_pooled_mae_difference": 0.0
+    },
+    {
+      "task": "retail-monthly-6-v1",
+      "model": "timestral-5m",
+      "track": "target_only",
+      "rows": 24,
+      "legacy_sha256": "665137dd82964750dcdda854310cede139f5b87aea741a7171d5479289982290",
+      "within_requested_tolerance": true,
+      "quantiles_outside_tolerance": 0,
+      "max_absolute_quantile_difference": 0.0,
+      "absolute_pooled_mae_difference": 0.0
+    },
+    {
+      "task": "retail-monthly-6-v1",
+      "model": "timestral-5m",
+      "track": "calendar",
+      "rows": 24,
+      "legacy_sha256": "665137dd82964750dcdda854310cede139f5b87aea741a7171d5479289982290",
+      "within_requested_tolerance": true,
+      "quantiles_outside_tolerance": 0,
+      "max_absolute_quantile_difference": 0.0,
+      "absolute_pooled_mae_difference": 0.0
+    },
+    {
+      "task": "retail-monthly-6-v1",
+      "model": "timestral-28m",
+      "track": "target_only",
+      "rows": 24,
+      "legacy_sha256": "3b596684313226404f375cb7ac943fb62c4fea26e82ddf558fe8ddd513e087c2",
+      "within_requested_tolerance": true,
+      "quantiles_outside_tolerance": 0,
+      "max_absolute_quantile_difference": 0.0,
+      "absolute_pooled_mae_difference": 0.0
+    },
+    {
+      "task": "retail-monthly-6-v1",
+      "model": "timestral-28m",
+      "track": "calendar",
+      "rows": 24,
+      "legacy_sha256": "3b596684313226404f375cb7ac943fb62c4fea26e82ddf558fe8ddd513e087c2",
+      "within_requested_tolerance": true,
+      "quantiles_outside_tolerance": 0,
+      "max_absolute_quantile_difference": 0.0,
+      "absolute_pooled_mae_difference": 0.0
+    },
+    {
+      "task": "retail-monthly-6-v1",
+      "model": "timestral-123m",
+      "track": "target_only",
+      "rows": 24,
+      "legacy_sha256": "48153f8488c0fbba97bc0c3056104914af5c4d6237a83509cc8db6cd91b4eb05",
+      "within_requested_tolerance": true,
+      "quantiles_outside_tolerance": 0,
+      "max_absolute_quantile_difference": 0.0,
+      "absolute_pooled_mae_difference": 0.0
+    },
+    {
+      "task": "retail-monthly-6-v1",
+      "model": "timestral-123m",
+      "track": "calendar",
+      "rows": 24,
+      "legacy_sha256": "48153f8488c0fbba97bc0c3056104914af5c4d6237a83509cc8db6cd91b4eb05",
+      "within_requested_tolerance": true,
+      "quantiles_outside_tolerance": 0,
+      "max_absolute_quantile_difference": 0.0,
+      "absolute_pooled_mae_difference": 0.0
+    },
+    {
+      "task": "retail-monthly-6-v1",
+      "model": "timestral-209m",
+      "track": "target_only",
+      "rows": 24,
+      "legacy_sha256": "6857b381677221fa311d96740ba6a1b1942152ed6545bcec0da9c6d10659219a",
+      "within_requested_tolerance": true,
+      "quantiles_outside_tolerance": 0,
+      "max_absolute_quantile_difference": 0.0,
+      "absolute_pooled_mae_difference": 0.0
+    },
+    {
+      "task": "retail-monthly-6-v1",
+      "model": "timestral-209m",
+      "track": "calendar",
+      "rows": 24,
+      "legacy_sha256": "6857b381677221fa311d96740ba6a1b1942152ed6545bcec0da9c6d10659219a",
+      "within_requested_tolerance": true,
+      "quantiles_outside_tolerance": 0,
+      "max_absolute_quantile_difference": 0.0,
+      "absolute_pooled_mae_difference": 0.0
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "model": "chronos2",
+      "track": "target_only",
+      "rows": 2880,
+      "legacy_sha256": "b5fd3c5c4d9e2a9899b1242434524b73b5b7e3bb6cf0ab521418b66ed8dce55f",
+      "within_requested_tolerance": true,
+      "quantiles_outside_tolerance": 0,
+      "max_absolute_quantile_difference": 0.0,
+      "absolute_pooled_mae_difference": 0.0
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "model": "timestral-5m",
+      "track": "target_only",
+      "rows": 2880,
+      "legacy_sha256": "b318940448dd06af051ff6e97cf6f62ecb10fe74bc6e4ca7e611fdda094e4492",
+      "within_requested_tolerance": true,
+      "quantiles_outside_tolerance": 0,
+      "max_absolute_quantile_difference": 0.0,
+      "absolute_pooled_mae_difference": 0.0
+    }
+  ],
+  "native_adapter_parity": [
+    {
+      "model": "timestral-5m",
+      "track": "target_only",
+      "input_values_equal": true,
+      "max_output_difference": 0.0
+    },
+    {
+      "model": "timestral-5m",
+      "track": "past_observed_calendar",
+      "input_values_equal": true,
+      "max_output_difference": 0.0
+    },
+    {
+      "model": "timestral-28m",
+      "track": "target_only",
+      "input_values_equal": true,
+      "max_output_difference": 0.0
+    },
+    {
+      "model": "timestral-28m",
+      "track": "past_observed_calendar",
+      "input_values_equal": true,
+      "max_output_difference": 0.0
+    },
+    {
+      "model": "timestral-123m",
+      "track": "target_only",
+      "input_values_equal": true,
+      "max_output_difference": 0.0
+    },
+    {
+      "model": "timestral-123m",
+      "track": "past_observed_calendar",
+      "input_values_equal": true,
+      "max_output_difference": 0.0
+    },
+    {
+      "model": "timestral-209m",
+      "track": "target_only",
+      "input_values_equal": true,
+      "max_output_difference": 0.0
+    },
+    {
+      "model": "timestral-209m",
+      "track": "past_observed_calendar",
+      "input_values_equal": true,
+      "max_output_difference": 0.0
+    },
+    {
+      "model": "chronos2",
+      "track": "target_only",
+      "input_values_equal": true,
+      "max_output_difference": 0.0
+    },
+    {
+      "model": "chronos2",
+      "track": "past_observed_calendar",
+      "input_values_equal": true,
+      "max_output_difference": 0.0
+    }
+  ],
+  "investigation": "All frozen source files and forecast actuals are unchanged. Direct native calls using the previous input construction and the new adapters produce exactly matching inputs and outputs on representative bike target-only/combined cases for all five checkpoints. Historical artifact quantiles have small numerical differences, concentrated on bikes; these are NOT claimed to meet the requested tolerance when marked false. Thread-count trials (1/2/4/8/10) did not reproduce the old 28M bike values. Legacy manifests lack hardware/thread provenance, so the precise cause of historical numerical variation remains unconfirmed. New CPU results and scores replace the historical results; native adapter equivalence is established separately from historical numerical reproduction."
+}

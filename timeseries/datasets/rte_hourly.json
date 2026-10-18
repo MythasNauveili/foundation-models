@@ -1,0 +1,2095 @@
+{
+  "source": "https://odre.opendatasoft.com/explore/dataset/eco2mix-regional-cons-def/",
+  "licence": "Etalab Open Licence 2.0",
+  "retrieved_at": "2026-10-17T20:56:17.645409+00:00",
+  "queries": [
+    {
+      "url": "https://odre.opendatasoft.com/api/explore/v2.1/catalog/datasets/eco2mix-regional-cons-def/exports/csv?select=code_insee_region%2Clibelle_region%2Cnature%2Cdate_heure%2Cconsommation%2Cdate%2Cheure&where=code_insee_region%3D%2244%22+AND+date_heure+%3E%3D+%222023-11-13T00%3A00%3A00Z%22+AND+date_heure+%3C+%222025-12-23T00%3A00%3A00Z%22&order_by=date_heure&timezone=UTC&use_labels=false&delimiter=%2C",
+      "raw_sha256": "bab634165bec7d1ff997d07f6f141dafba64d8ff6cdd6fbafb7d3e11e18e0366",
+      "rows": 37008
+    },
+    {
+      "url": "https://odre.opendatasoft.com/api/explore/v2.1/catalog/datasets/eco2mix-regional-cons-def/exports/csv?select=code_insee_region%2Clibelle_region%2Cnature%2Cdate_heure%2Cconsommation%2Cdate%2Cheure&where=code_insee_region%3D%2253%22+AND+date_heure+%3E%3D+%222023-11-13T00%3A00%3A00Z%22+AND+date_heure+%3C+%222025-12-23T00%3A00%3A00Z%22&order_by=date_heure&timezone=UTC&use_labels=false&delimiter=%2C",
+      "raw_sha256": "d753d72001873e421154fe845a2019254d4ea63abce728acd10bd62c103d1acc",
+      "rows": 37008
+    },
+    {
+      "url": "https://odre.opendatasoft.com/api/explore/v2.1/catalog/datasets/eco2mix-regional-cons-def/exports/csv?select=code_insee_region%2Clibelle_region%2Cnature%2Cdate_heure%2Cconsommation%2Cdate%2Cheure&where=code_insee_region%3D%2211%22+AND+date_heure+%3E%3D+%222023-11-13T00%3A00%3A00Z%22+AND+date_heure+%3C+%222025-12-23T00%3A00%3A00Z%22&order_by=date_heure&timezone=UTC&use_labels=false&delimiter=%2C",
+      "raw_sha256": "d40ea4ba07fe2cc73cdb3be14202df2fcccf01ad2356ee02c038a8e02a775cf4",
+      "rows": 37008
+    },
+    {
+      "url": "https://odre.opendatasoft.com/api/explore/v2.1/catalog/datasets/eco2mix-regional-cons-def/exports/csv?select=code_insee_region%2Clibelle_region%2Cnature%2Cdate_heure%2Cconsommation%2Cdate%2Cheure&where=code_insee_region%3D%2276%22+AND+date_heure+%3E%3D+%222023-11-13T00%3A00%3A00Z%22+AND+date_heure+%3C+%222025-12-23T00%3A00%3A00Z%22&order_by=date_heure&timezone=UTC&use_labels=false&delimiter=%2C",
+      "raw_sha256": "a8af5c944e44efdafae81c13423b839bc4e6aa1b6e7cd16b16ebb8c380892483",
+      "rows": 37008
+    },
+    {
+      "url": "https://odre.opendatasoft.com/api/explore/v2.1/catalog/datasets/eco2mix-regional-cons-def/exports/csv?select=code_insee_region%2Clibelle_region%2Cnature%2Cdate_heure%2Cconsommation%2Cdate%2Cheure&where=code_insee_region%3D%2232%22+AND+date_heure+%3E%3D+%222023-11-13T00%3A00%3A00Z%22+AND+date_heure+%3C+%222025-12-23T00%3A00%3A00Z%22&order_by=date_heure&timezone=UTC&use_labels=false&delimiter=%2C",
+      "raw_sha256": "9fe41f21d5f13e256b526bdb70e7b9ccf422ebeccf2ba0b3982e9743f679dc97",
+      "rows": 37008
+    },
+    {
+      "url": "https://odre.opendatasoft.com/api/explore/v2.1/catalog/datasets/eco2mix-regional-cons-def/exports/csv?select=code_insee_region%2Clibelle_region%2Cnature%2Cdate_heure%2Cconsommation%2Cdate%2Cheure&where=code_insee_region%3D%2293%22+AND+date_heure+%3E%3D+%222023-11-13T00%3A00%3A00Z%22+AND+date_heure+%3C+%222025-12-23T00%3A00%3A00Z%22&order_by=date_heure&timezone=UTC&use_labels=false&delimiter=%2C",
+      "raw_sha256": "1e0589da1c7c7ad7f7cf8551bb7860fa6d147da41e51a8bd7270ea7298eaf886",
+      "rows": 37008
+    }
+  ],
+  "start_inclusive": "2023-11-13T00:00:00Z",
+  "end_exclusive": "2025-12-23T00:00:00Z",
+  "regions": {
+    "44": "Grand Est",
+    "53": "Bretagne",
+    "11": "Île-de-France",
+    "76": "Occitanie",
+    "32": "Hauts-de-France",
+    "93": "Provence-Alpes-Côte d'Azur"
+  },
+  "source_labels": {
+    "11": "Île-de-France",
+    "32": "Hauts-de-France",
+    "44": "Grand Est",
+    "53": "Bretagne",
+    "76": "Occitanie",
+    "93": "Provence-Alpes-Côte d'Azur"
+  },
+  "revision_categories": {
+    "Données définitives": 222048
+  },
+  "raw_rows": 222048,
+  "exact_duplicate_rows": 0,
+  "timestamp_check": "date_heure is the authoritative timezone-aware coordinate; source dates agree with Europe/Paris. Spring-transition heure labels can name nonexistent 02:00/02:30 hours.",
+  "source_clock_label_mismatches": 24,
+  "discarded_nonexistent_local_clock_rows": 24,
+  "clock_correction": "Discard nonexistent spring 02:00/02:30 local labels only when a valid 03:00/03:30 counterpart has the same UTC key; all remaining duplicate keys are rejected. Autumn gaps remain missing.",
+  "clock_label_examples": [
+    {
+      "code_insee_region": "44",
+      "date_heure": "2024-03-31T01:00:00+00:00",
+      "date": "2024-03-31",
+      "heure": "02:00"
+    },
+    {
+      "code_insee_region": "44",
+      "date_heure": "2024-03-31T01:30:00+00:00",
+      "date": "2024-03-31",
+      "heure": "02:30"
+    },
+    {
+      "code_insee_region": "44",
+      "date_heure": "2025-03-30T01:00:00+00:00",
+      "date": "2025-03-30",
+      "heure": "02:00"
+    },
+    {
+      "code_insee_region": "44",
+      "date_heure": "2025-03-30T01:30:00+00:00",
+      "date": "2025-03-30",
+      "heure": "02:30"
+    }
+  ],
+  "aggregation": "Mean of the two timestamped half-hourly MW values at :00 and :30; both required.",
+  "hourly_rows": 111024,
+  "missing_hours_by_entity": {
+    "11": 2,
+    "32": 2,
+    "44": 2,
+    "53": 2,
+    "76": 2,
+    "93": 2
+  },
+  "development_profile": [
+    {
+      "entity": "11",
+      "count": 8783,
+      "min": 3856.5,
+      "max": 13869.5,
+      "mean": 7367.139018558579
+    },
+    {
+      "entity": "32",
+      "count": 8783,
+      "min": 2355.5,
+      "max": 8479.5,
+      "mean": 5273.013947398384
+    },
+    {
+      "entity": "44",
+      "count": 8783,
+      "min": 1837.5,
+      "max": 7521.5,
+      "mean": 4736.114653307526
+    },
+    {
+      "entity": "53",
+      "count": 8783,
+      "min": 1246.5,
+      "max": 4872.5,
+      "mean": 2467.4430718433337
+    },
+    {
+      "entity": "76",
+      "count": 8783,
+      "min": 2127.0,
+      "max": 7320.5,
+      "mean": 4085.9021404986906
+    },
+    {
+      "entity": "93",
+      "count": 8783,
+      "min": 2736.0,
+      "max": 6597.5,
+      "mean": 4341.086815438916
+    }
+  ],
+  "cycles": [
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2024-01-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2024-01-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2024-02-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2024-02-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2024-03-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2024-03-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2024-04-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2024-04-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2024-05-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2024-05-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2024-06-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2024-06-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2024-07-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2024-07-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2024-08-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2024-08-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2024-09-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2024-09-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2024-10-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2024-10-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2025-01-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2025-01-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2025-02-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2025-02-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2025-03-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2025-03-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2025-04-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2025-04-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2025-05-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2025-05-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2025-06-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2025-06-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2025-07-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2025-07-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2025-08-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2025-08-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2025-09-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2025-09-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2025-10-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2025-10-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2025-12-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2024-01-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2024-01-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2024-02-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2024-02-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2024-03-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2024-03-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2024-04-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2024-04-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2024-05-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2024-05-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2024-06-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2024-06-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2024-07-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2024-07-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2024-08-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2024-08-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2024-09-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2024-09-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2024-10-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2024-10-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2025-01-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2025-01-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2025-02-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2025-02-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2025-03-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2025-03-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2025-04-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2025-04-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2025-05-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2025-05-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2025-06-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2025-06-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2025-07-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2025-07-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2025-08-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2025-08-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2025-09-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2025-09-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2025-10-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2025-10-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2025-12-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2024-01-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2024-01-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2024-02-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2024-02-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2024-03-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2024-03-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2024-04-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2024-04-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2024-05-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2024-05-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2024-06-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2024-06-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2024-07-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2024-07-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2024-08-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2024-08-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2024-09-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2024-09-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2024-10-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2024-10-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2025-01-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2025-01-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2025-02-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2025-02-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2025-03-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2025-03-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2025-04-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2025-04-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2025-05-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2025-05-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2025-06-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2025-06-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2025-07-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2025-07-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2025-08-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2025-08-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2025-09-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2025-09-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2025-10-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2025-10-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2025-12-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2024-01-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2024-01-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2024-02-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2024-02-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2024-03-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2024-03-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2024-04-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2024-04-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2024-05-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2024-05-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2024-06-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2024-06-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2024-07-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2024-07-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2024-08-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2024-08-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2024-09-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2024-09-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2024-10-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2024-10-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2025-01-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2025-01-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2025-02-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2025-02-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2025-03-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2025-03-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2025-04-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2025-04-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2025-05-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2025-05-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2025-06-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2025-06-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2025-07-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2025-07-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2025-08-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2025-08-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2025-09-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2025-09-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2025-10-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2025-10-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2025-12-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2024-01-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2024-01-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2024-02-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2024-02-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2024-03-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2024-03-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2024-04-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2024-04-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2024-05-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2024-05-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2024-06-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2024-06-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2024-07-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2024-07-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2024-08-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2024-08-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2024-09-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2024-09-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2024-10-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2024-10-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2025-01-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2025-01-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2025-02-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2025-02-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2025-03-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2025-03-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2025-04-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2025-04-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2025-05-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2025-05-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2025-06-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2025-06-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2025-07-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2025-07-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2025-08-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2025-08-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2025-09-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2025-09-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2025-10-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2025-10-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2025-12-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2024-01-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2024-01-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2024-02-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2024-02-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2024-03-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2024-03-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2024-04-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2024-04-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2024-05-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2024-05-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2024-06-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2024-06-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2024-07-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2024-07-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2024-08-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2024-08-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2024-09-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2024-09-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2024-10-08T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2024-10-22T00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2025-01-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2025-01-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2025-02-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2025-02-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2025-03-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2025-03-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2025-04-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2025-04-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2025-05-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2025-05-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2025-06-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2025-06-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2025-07-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2025-07-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2025-08-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2025-08-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2025-09-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2025-09-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2025-10-08T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2025-10-22T00:00:00+00:00",
+      "split": "evaluation"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2025-12-22T00:00:00+00:00",
+      "split": "evaluation"
+    }
+  ],
+  "eligible_windows": {
+    "development": 120,
+    "evaluation": 126
+  },
+  "excluded_windows": [
+    {
+      "dataset": "rte",
+      "entity": "44",
+      "split": "development",
+      "forecast_start": "2024-11-08T00:00:00+00:00",
+      "history_length": 1344,
+      "horizon": 24,
+      "seasonal_lag": 168,
+      "frequency": "h",
+      "reason": "missing RTE history"
+    },
+    {
+      "dataset": "rte",
+      "entity": "44",
+      "split": "development",
+      "forecast_start": "2024-11-22T00:00:00+00:00",
+      "history_length": 1344,
+      "horizon": 24,
+      "seasonal_lag": 168,
+      "frequency": "h",
+      "reason": "missing RTE history"
+    },
+    {
+      "dataset": "rte",
+      "entity": "44",
+      "split": "development",
+      "forecast_start": "2024-12-08T00:00:00+00:00",
+      "history_length": 1344,
+      "horizon": 24,
+      "seasonal_lag": 168,
+      "frequency": "h",
+      "reason": "missing RTE history"
+    },
+    {
+      "dataset": "rte",
+      "entity": "44",
+      "split": "development",
+      "forecast_start": "2024-12-22T00:00:00+00:00",
+      "history_length": 1344,
+      "horizon": 24,
+      "seasonal_lag": 168,
+      "frequency": "h",
+      "reason": "missing RTE history"
+    },
+    {
+      "dataset": "rte",
+      "entity": "44",
+      "split": "evaluation",
+      "forecast_start": "2025-11-08T00:00:00+00:00",
+      "history_length": 1344,
+      "horizon": 24,
+      "seasonal_lag": 168,
+      "frequency": "h",
+      "reason": "missing RTE history"
+    },
+    {
+      "dataset": "rte",
+      "entity": "44",
+      "split": "evaluation",
+      "forecast_start": "2025-11-22T00:00:00+00:00",
+      "history_length": 1344,
+      "horizon": 24,
+      "seasonal_lag": 168,
+      "frequency": "h",
+      "reason": "missing RTE history"
+    },
+    {
+      "dataset": "rte",
+      "entity": "44",
+      "split": "evaluation",
+      "forecast_start": "2025-12-08T00:00:00+00:00",
+      "history_length": 1344,
+      "horizon": 24,
+      "seasonal_lag": 168,
+      "frequency": "h",
+      "reason": "missing RTE history"
+    },
+    {
+      "dataset": "rte",
+      "entity": "53",
+      "split": "development",
+      "forecast_start": "2024-11-08T00:00:00+00:00",
+      "history_length": 1344,
+      "horizon": 24,
+      "seasonal_lag": 168,
+      "frequency": "h",
+      "reason": "missing RTE history"
+    },
+    {
+      "dataset": "rte",
+      "entity": "53",
+      "split": "development",
+      "forecast_start": "2024-11-22T00:00:00+00:00",
+      "history_length": 1344,
+      "horizon": 24,
+      "seasonal_lag": 168,
+      "frequency": "h",
+      "reason": "missing RTE history"
+    },
+    {
+      "dataset": "rte",
+      "entity": "53",
+      "split": "development",
+      "forecast_start": "2024-12-08T00:00:00+00:00",
+      "history_length": 1344,
+      "horizon": 24,
+      "seasonal_lag": 168,
+      "frequency": "h",
+      "reason": "missing RTE history"
+    },
+    {
+      "dataset": "rte",
+      "entity": "53",
+      "split": "development",
+      "forecast_start": "2024-12-22T00:00:00+00:00",
+      "history_length": 1344,
+      "horizon": 24,
+      "seasonal_lag": 168,
+      "frequency": "h",
+      "reason": "missing RTE history"
+    },
+    {
+      "dataset": "rte",
+      "entity": "53",
+      "split": "evaluation",
+      "forecast_start": "2025-11-08T00:00:00+00:00",
+      "history_length": 1344,
+      "horizon": 24,
+      "seasonal_lag": 168,
+      "frequency": "h",
+      "reason": "missing RTE history"
+    },
+    {
+      "dataset": "rte",
+      "entity": "53",
+      "split": "evaluation",
+      "forecast_start": "2025-11-22T00:00:00+00:00",
+      "history_length": 1344,
+      "horizon": 24,
+      "seasonal_lag": 168,
+      "frequency": "h",
+      "reason": "missing RTE history"
+    },
+    {
+      "dataset": "rte",
+      "entity": "53",
+      "split": "evaluation",
+      "forecast_start": "2025-12-08T00:00:00+00:00",
+      "history_length": 1344,
+      "horizon": 24,
+      "seasonal_lag": 168,
+      "frequency": "h",
+      "reason": "missing RTE history"
+    },
+    {
+      "dataset": "rte",
+      "entity": "11",
+      "split": "development",
+      "forecast_start": "2024-11-08T00:00:00+00:00",
+      "history_length": 1344,
+      "horizon": 24,
+      "seasonal_lag": 168,
+      "frequency": "h",
+      "reason": "missing RTE history"
+    },
+    {
+      "dataset": "rte",
+      "entity": "11",
+      "split": "development",
+      "forecast_start": "2024-11-22T00:00:00+00:00",
+      "history_length": 1344,
+      "horizon": 24,
+      "seasonal_lag": 168,
+      "frequency": "h",
+      "reason": "missing RTE history"
+    },
+    {
+      "dataset": "rte",
+      "entity": "11",
+      "split": "development",
+      "forecast_start": "2024-12-08T00:00:00+00:00",
+      "history_length": 1344,
+      "horizon": 24,
+      "seasonal_lag": 168,
+      "frequency": "h",
+      "reason": "missing RTE history"
+    },
+    {
+      "dataset": "rte",
+      "entity": "11",
+      "split": "development",
+      "forecast_start": "2024-12-22T00:00:00+00:00",
+      "history_length": 1344,
+      "horizon": 24,
+      "seasonal_lag": 168,
+      "frequency": "h",
+      "reason": "missing RTE history"
+    },
+    {
+      "dataset": "rte",
+      "entity": "11",
+      "split": "evaluation",
+      "forecast_start": "2025-11-08T00:00:00+00:00",
+      "history_length": 1344,
+      "horizon": 24,
+      "seasonal_lag": 168,
+      "frequency": "h",
+      "reason": "missing RTE history"
+    },
+    {
+      "dataset": "rte",
+      "entity": "11",
+      "split": "evaluation",
+      "forecast_start": "2025-11-22T00:00:00+00:00",
+      "history_length": 1344,
+      "horizon": 24,
+      "seasonal_lag": 168,
+      "frequency": "h",
+      "reason": "missing RTE history"
+    },
+    {
+      "dataset": "rte",
+      "entity": "11",
+      "split": "evaluation",
+      "forecast_start": "2025-12-08T00:00:00+00:00",
+      "history_length": 1344,
+      "horizon": 24,
+      "seasonal_lag": 168,
+      "frequency": "h",
+      "reason": "missing RTE history"
+    },
+    {
+      "dataset": "rte",
+      "entity": "76",
+      "split": "development",
+      "forecast_start": "2024-11-08T00:00:00+00:00",
+      "history_length": 1344,
+      "horizon": 24,
+      "seasonal_lag": 168,
+      "frequency": "h",
+      "reason": "missing RTE history"
+    },
+    {
+      "dataset": "rte",
+      "entity": "76",
+      "split": "development",
+      "forecast_start": "2024-11-22T00:00:00+00:00",
+      "history_length": 1344,
+      "horizon": 24,
+      "seasonal_lag": 168,
+      "frequency": "h",
+      "reason": "missing RTE history"
+    },
+    {
+      "dataset": "rte",
+      "entity": "76",
+      "split": "development",
+      "forecast_start": "2024-12-08T00:00:00+00:00",
+      "history_length": 1344,
+      "horizon": 24,
+      "seasonal_lag": 168,
+      "frequency": "h",
+      "reason": "missing RTE history"
+    },
+    {
+      "dataset": "rte",
+      "entity": "76",
+      "split": "development",
+      "forecast_start": "2024-12-22T00:00:00+00:00",
+      "history_length": 1344,
+      "horizon": 24,
+      "seasonal_lag": 168,
+      "frequency": "h",
+      "reason": "missing RTE history"
+    },
+    {
+      "dataset": "rte",
+      "entity": "76",
+      "split": "evaluation",
+      "forecast_start": "2025-11-08T00:00:00+00:00",
+      "history_length": 1344,
+      "horizon": 24,
+      "seasonal_lag": 168,
+      "frequency": "h",
+      "reason": "missing RTE history"
+    },
+    {
+      "dataset": "rte",
+      "entity": "76",
+      "split": "evaluation",
+      "forecast_start": "2025-11-22T00:00:00+00:00",
+      "history_length": 1344,
+      "horizon": 24,
+      "seasonal_lag": 168,
+      "frequency": "h",
+      "reason": "missing RTE history"
+    },
+    {
+      "dataset": "rte",
+      "entity": "76",
+      "split": "evaluation",
+      "forecast_start": "2025-12-08T00:00:00+00:00",
+      "history_length": 1344,
+      "horizon": 24,
+      "seasonal_lag": 168,
+      "frequency": "h",
+      "reason": "missing RTE history"
+    },
+    {
+      "dataset": "rte",
+      "entity": "32",
+      "split": "development",
+      "forecast_start": "2024-11-08T00:00:00+00:00",
+      "history_length": 1344,
+      "horizon": 24,
+      "seasonal_lag": 168,
+      "frequency": "h",
+      "reason": "missing RTE history"
+    },
+    {
+      "dataset": "rte",
+      "entity": "32",
+      "split": "development",
+      "forecast_start": "2024-11-22T00:00:00+00:00",
+      "history_length": 1344,
+      "horizon": 24,
+      "seasonal_lag": 168,
+      "frequency": "h",
+      "reason": "missing RTE history"
+    },
+    {
+      "dataset": "rte",
+      "entity": "32",
+      "split": "development",
+      "forecast_start": "2024-12-08T00:00:00+00:00",
+      "history_length": 1344,
+      "horizon": 24,
+      "seasonal_lag": 168,
+      "frequency": "h",
+      "reason": "missing RTE history"
+    },
+    {
+      "dataset": "rte",
+      "entity": "32",
+      "split": "development",
+      "forecast_start": "2024-12-22T00:00:00+00:00",
+      "history_length": 1344,
+      "horizon": 24,
+      "seasonal_lag": 168,
+      "frequency": "h",
+      "reason": "missing RTE history"
+    },
+    {
+      "dataset": "rte",
+      "entity": "32",
+      "split": "evaluation",
+      "forecast_start": "2025-11-08T00:00:00+00:00",
+      "history_length": 1344,
+      "horizon": 24,
+      "seasonal_lag": 168,
+      "frequency": "h",
+      "reason": "missing RTE history"
+    },
+    {
+      "dataset": "rte",
+      "entity": "32",
+      "split": "evaluation",
+      "forecast_start": "2025-11-22T00:00:00+00:00",
+      "history_length": 1344,
+      "horizon": 24,
+      "seasonal_lag": 168,
+      "frequency": "h",
+      "reason": "missing RTE history"
+    },
+    {
+      "dataset": "rte",
+      "entity": "32",
+      "split": "evaluation",
+      "forecast_start": "2025-12-08T00:00:00+00:00",
+      "history_length": 1344,
+      "horizon": 24,
+      "seasonal_lag": 168,
+      "frequency": "h",
+      "reason": "missing RTE history"
+    },
+    {
+      "dataset": "rte",
+      "entity": "93",
+      "split": "development",
+      "forecast_start": "2024-11-08T00:00:00+00:00",
+      "history_length": 1344,
+      "horizon": 24,
+      "seasonal_lag": 168,
+      "frequency": "h",
+      "reason": "missing RTE history"
+    },
+    {
+      "dataset": "rte",
+      "entity": "93",
+      "split": "development",
+      "forecast_start": "2024-11-22T00:00:00+00:00",
+      "history_length": 1344,
+      "horizon": 24,
+      "seasonal_lag": 168,
+      "frequency": "h",
+      "reason": "missing RTE history"
+    },
+    {
+      "dataset": "rte",
+      "entity": "93",
+      "split": "development",
+      "forecast_start": "2024-12-08T00:00:00+00:00",
+      "history_length": 1344,
+      "horizon": 24,
+      "seasonal_lag": 168,
+      "frequency": "h",
+      "reason": "missing RTE history"
+    },
+    {
+      "dataset": "rte",
+      "entity": "93",
+      "split": "development",
+      "forecast_start": "2024-12-22T00:00:00+00:00",
+      "history_length": 1344,
+      "horizon": 24,
+      "seasonal_lag": 168,
+      "frequency": "h",
+      "reason": "missing RTE history"
+    },
+    {
+      "dataset": "rte",
+      "entity": "93",
+      "split": "evaluation",
+      "forecast_start": "2025-11-08T00:00:00+00:00",
+      "history_length": 1344,
+      "horizon": 24,
+      "seasonal_lag": 168,
+      "frequency": "h",
+      "reason": "missing RTE history"
+    },
+    {
+      "dataset": "rte",
+      "entity": "93",
+      "split": "evaluation",
+      "forecast_start": "2025-11-22T00:00:00+00:00",
+      "history_length": 1344,
+      "horizon": 24,
+      "seasonal_lag": 168,
+      "frequency": "h",
+      "reason": "missing RTE history"
+    },
+    {
+      "dataset": "rte",
+      "entity": "93",
+      "split": "evaluation",
+      "forecast_start": "2025-12-08T00:00:00+00:00",
+      "history_length": 1344,
+      "horizon": 24,
+      "seasonal_lag": 168,
+      "frequency": "h",
+      "reason": "missing RTE history"
+    }
+  ],
+  "availability": "Retrospective consolidated/definitive history; historical as-of availability is not reconstructed.",
+  "pretraining_exposure": "unknown",
+  "reserved_scores_computed": false,
+  "dataset_sha256": "adb625e9f10fda3c872044f006ff0217bff1604ff45bf580c7debdd379a20bf8",
+  "schedule_sha256": "67ced438e4ac01e5402df4f5e0a6c4a99347ef00893e4a0aeec6da4039d085a8"
+}

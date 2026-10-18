@@ -1,122 +1,103 @@
-"""Generate seasonal forecast cycles per Timestral size, using its shared uv project."""
+"""Export pinned Timestral forecasts; 5M by default, all sizes explicitly."""
 
-import argparse
-from datetime import datetime, timezone
-from hashlib import sha256
-from importlib.metadata import version
-import json
-from pathlib import Path
-from time import perf_counter
+from functools import partial
 
 import numpy as np
-import pandas as pd
-from timestral import TimestralForecaster
 
-AREA = Path(__file__).resolve().parents[1]
+from foundation_timeseries.runner import (
+    ModelSpec,
+    Prediction,
+    argument_parser,
+    model_provenance,
+    run,
+    selected_tasks,
+)
+
 CHECKPOINTS = {
     "5M": "bdd20cfc15a3fea0e4cb5ccef37f8d3ca7aa335f",
     "28M": "180698bbf5a50dda3516aa6419798437fb03a430",
     "123M": "5a147287addda85f6acd8da3fb8858fe9af7e8f7",
     "209M": "9874d252ab0aae16f7f7c999f98f98d6ad7d8365",
 }
-# filename, past-only covariates
-DATASETS = {
-    "weather": ("strasbourg_daily.csv", ["precipitation_sum", "wind_speed_10m_max"]),
-    "bikes": ("bikes_2hourly.csv", ["temp", "hum", "windspeed"]),
-    "retail": ("retail_monthly.csv", []),
-}
 
 
-def evaluate(size):
-    model_id = f"mistralai/Timestral-{size}"
-    revision = CHECKPOINTS[size]
-    model = TimestralForecaster.from_pretrained(model_id, revision=revision, device="cpu")
-    schedule_path = AREA / "datasets" / "cycles.csv"
-    schedule = pd.read_csv(schedule_path, parse_dates=["forecast_start"])
-    frames = []
-    metadata = {
-        "schema_version": 2,
-        "cycles_sha256": sha256(schedule_path.read_bytes()).hexdigest(),
-        "cycles": pd.read_csv(schedule_path).to_dict("records"),
-        "model_id": model_id, "revision": revision,
-        "library_version": version("timestral"),
-        "generated_at": datetime.now(timezone.utc).isoformat(),
-        "device": "cpu", "dtype": "float32", "dataset_sha256": {}, "inference_seconds": {},
-    }
-    for dataset, (filename, past_columns) in DATASETS.items():
-        path = AREA / "datasets" / filename
-        metadata["dataset_sha256"][dataset] = sha256(path.read_bytes()).hexdigest()
-        data = pd.read_csv(path, parse_dates=["timestamp"]).set_index("timestamp", drop=False)
-        if dataset == "weather":
-            data["day_of_year"] = data.timestamp.dt.dayofyear.astype(float)
-            known_columns = ["day_of_year"]
-        elif dataset == "bikes":
-            data["hour"] = data.timestamp.dt.hour.astype(float)
-            data["weekday"] = data.timestamp.dt.dayofweek.astype(float)
-            known_columns = ["hour", "weekday"]
-        else:
-            data["month"] = data.timestamp.dt.month.astype(float)
-            known_columns = ["month"]
+def model_spec(size):
+    return ModelSpec(
+        f"timestral-{size.lower()}",
+        f"Timestral-{size}",
+        f"mistralai/Timestral-{size}",
+        CHECKPOINTS[size],
+        "timestral",
+        "timestral",
+        settings=(
+            ("device", "cpu"),
+            ("dtype", "float32"),
+            ("symmetric_averaging", True),
+            ("clip_nonnegative", True),
+            ("quantile_real_cap_k", 10000.0),
+            ("per_shot_horizon_patches", "checkpoint default"),
+        ),
+    )
 
-        metadata["inference_seconds"][dataset] = {"Target only": {}, "With covariates": {}}
-        for cycle in schedule[schedule.dataset == dataset].itertuples(index=False):
-            position = data.index.get_loc(cycle.forecast_start)
-            horizon, seasonal_lag = cycle.horizon, cycle.seasonal_lag
-            history = data.iloc[position - cycle.history_length:position].copy()
-            assert len(history) == cycle.history_length
-            assert cycle.history_length <= model.max_context, "History exceeds the checkpoint context limit"
-            # Future inputs contain calendar features only, never targets or observed weather.
-            future_known = data.iloc[position:position + horizon][["timestamp", *known_columns]].copy()
-            actual = data.target.iloc[position:position + horizon].to_numpy()
-            baseline = history.target.iloc[-seasonal_lag:-seasonal_lag + horizon].to_numpy().copy()
-            for step in range(horizon):
-                if pd.isna(baseline[step]):
-                    earlier = history.target.iloc[step - seasonal_lag::-seasonal_lag].dropna()
-                    assert not earlier.empty, f"No historical seasonal baseline: {dataset}, {cycle.forecast_start}, step {step + 1}"
-                    baseline[step] = earlier.iloc[0]
-            assert np.isfinite(actual).all() and np.isfinite(baseline).all()
 
-            for with_covariates in (False, True):
-                mode = "With covariates" if with_covariates else "Target only"
-                past = None
-                known = None
-                if with_covariates:
-                    if past_columns:
-                        past = history[past_columns].to_numpy(dtype=np.float32).T[None, ...]
-                    known = np.concatenate([
-                        history[known_columns].to_numpy(dtype=np.float32),
-                        future_known[known_columns].to_numpy(dtype=np.float32),
-                    ]).T[None, ...]
-                started = perf_counter()
-                output = model.forecast(
-                    context=history.target.to_numpy(dtype=np.float32), prediction_length=horizon,
-                    past_covariates=past, known_covariates=known,
-                )
-                elapsed = perf_counter() - started
-                # Preserve the native float32 values when CSV formatting writes decimal numbers.
-                quantiles = np.stack([output.quantile(q)[0, 0].numpy() for q in (0.1, 0.5, 0.9)], axis=-1).astype(float)
-                assert quantiles.shape == (horizon, 3) and np.isfinite(quantiles).all()
-                assert (np.diff(quantiles, axis=1) >= 0).all()
-                metadata["inference_seconds"][dataset][mode][str(cycle.forecast_start)] = elapsed
-                frames.append(pd.DataFrame({
-                    "dataset": dataset, "mode": mode, "forecast_start": cycle.forecast_start,
-                    "timestamp": future_known.timestamp, "step": np.arange(1, horizon + 1),
-                    "actual": actual, "baseline": baseline,
-                    "p10": quantiles[:, 0], "p50": quantiles[:, 1], "p90": quantiles[:, 2],
-                }))
-                print(f"Timestral-{size} / {dataset} / {cycle.forecast_start:%Y-%m-%d} / {mode}: MAE={np.abs(actual - quantiles[:, 1]).mean():.3f}", flush=True)
+class TimestralAdapter:
+    def __init__(self, spec):
+        import torch
+        from timestral import TimestralForecaster
 
-    results = AREA / "results"
-    results.mkdir(exist_ok=True)
-    csv_path = results / f"timestral-{size.lower()}.csv"
-    pd.concat(frames, ignore_index=True).to_csv(csv_path, index=False)
-    metadata["predictions_sha256"] = sha256(csv_path.read_bytes()).hexdigest()
-    csv_path.with_suffix(".json").write_text(json.dumps(metadata, indent=2) + "\n")
+        self.model = TimestralForecaster.from_pretrained(
+            spec.checkpoint, revision=spec.revision, device="cpu"
+        )
+        self.spec = spec
+        self.runtime = {
+            "max_context": self.model.max_context,
+            "per_shot_horizon_patches": self.model.per_shot_horizon_patches,
+        }
+        self.hardware = {
+            "torch_threads": torch.get_num_threads(),
+            "torch_version": torch.__version__,
+            "device": "cpu",
+            "dtype": "float32",
+            "entities_per_call": 1,
+        }
+
+    def predict(self, inputs):
+        past = (
+            np.stack(list(inputs.past_covariates.values()))[None, ...]
+            if inputs.past_covariates
+            else None
+        )
+        known = (
+            np.stack(
+                [
+                    np.concatenate([inputs.known_history[c], inputs.known_future[c]])
+                    for c in inputs.known_history
+                ]
+            )[None, ...]
+            if inputs.known_history
+            else None
+        )
+        output = self.model.forecast(
+            context=inputs.target,
+            prediction_length=inputs.horizon,
+            past_covariates=past,
+            known_covariates=known,
+            symmetric_averaging=True,
+            clip_nonnegative=True,
+        )
+        quantiles = {q: output.quantile(q)[0, 0].numpy().astype(float) for q in self.spec.quantiles}
+        return Prediction(quantiles[0.5], "median", quantiles)
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--size", choices=["all", *CHECKPOINTS], default="all", help="Checkpoint size (default: all)")
-    args = parser.parse_args()
+    args = argument_parser(__doc__, CHECKPOINTS).parse_args()
     for size in CHECKPOINTS if args.size == "all" else [args.size]:
-        evaluate(size)
+        spec = model_spec(size)
+        run(
+            selected_tasks(args),
+            spec,
+            partial(TimestralAdapter, spec),
+            smoke=args.smoke,
+            refresh=args.refresh,
+            provenance=model_provenance(spec),
+        )

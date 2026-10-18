@@ -1,0 +1,2254 @@
+{
+  "schema_version": 5,
+  "task_id": "rte-hourly-24-v1",
+  "split": "development",
+  "smoke": false,
+  "source_sha256": "adb625e9f10fda3c872044f006ff0217bff1604ff45bf580c7debdd379a20bf8",
+  "schedule": [
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2024-01-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2024-01-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2024-02-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2024-02-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2024-03-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2024-03-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2024-04-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2024-04-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2024-05-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2024-05-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2024-06-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2024-06-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2024-07-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2024-07-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2024-08-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2024-08-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2024-09-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2024-09-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2024-10-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "11",
+      "forecast_start": "2024-10-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2024-01-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2024-01-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2024-02-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2024-02-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2024-03-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2024-03-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2024-04-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2024-04-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2024-05-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2024-05-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2024-06-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2024-06-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2024-07-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2024-07-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2024-08-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2024-08-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2024-09-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2024-09-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2024-10-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "32",
+      "forecast_start": "2024-10-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2024-01-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2024-01-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2024-02-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2024-02-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2024-03-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2024-03-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2024-04-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2024-04-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2024-05-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2024-05-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2024-06-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2024-06-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2024-07-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2024-07-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2024-08-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2024-08-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2024-09-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2024-09-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2024-10-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "44",
+      "forecast_start": "2024-10-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2024-01-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2024-01-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2024-02-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2024-02-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2024-03-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2024-03-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2024-04-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2024-04-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2024-05-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2024-05-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2024-06-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2024-06-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2024-07-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2024-07-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2024-08-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2024-08-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2024-09-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2024-09-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2024-10-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "53",
+      "forecast_start": "2024-10-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2024-01-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2024-01-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2024-02-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2024-02-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2024-03-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2024-03-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2024-04-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2024-04-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2024-05-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2024-05-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2024-06-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2024-06-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2024-07-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2024-07-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2024-08-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2024-08-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2024-09-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2024-09-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2024-10-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "76",
+      "forecast_start": "2024-10-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2024-01-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2024-01-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2024-02-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2024-02-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2024-03-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2024-03-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2024-04-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2024-04-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2024-05-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2024-05-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2024-06-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2024-06-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2024-07-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2024-07-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2024-08-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2024-08-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2024-09-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2024-09-22 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2024-10-08 00:00:00+00:00",
+      "split": "development"
+    },
+    {
+      "task": "rte-hourly-24-v1",
+      "entity": "93",
+      "forecast_start": "2024-10-22 00:00:00+00:00",
+      "split": "development"
+    }
+  ],
+  "model": {
+    "spec": {
+      "id": "timestral-209m",
+      "name": "Timestral-209M",
+      "checkpoint": "mistralai/Timestral-209M",
+      "revision": "9874d252ab0aae16f7f7c999f98f98d6ad7d8365",
+      "library": "timestral",
+      "environment": "timestral",
+      "quantiles": [
+        0.1,
+        0.5,
+        0.9
+      ],
+      "settings": [
+        [
+          "device",
+          "cpu"
+        ],
+        [
+          "dtype",
+          "float32"
+        ],
+        [
+          "symmetric_averaging",
+          true
+        ],
+        [
+          "clip_nonnegative",
+          true
+        ],
+        [
+          "quantile_real_cap_k",
+          10000.0
+        ],
+        [
+          "per_shot_horizon_patches",
+          "checkpoint default"
+        ]
+      ]
+    },
+    "library_version": "1.0.0",
+    "lockfile_sha256": "37431bd870cfad3093faceb977b4848b226a6d1ea462c8d4f9d18a3c3a8e36fe"
+  },
+  "generated_at": "2026-10-17T21:45:33.664967+00:00",
+  "hardware": {
+    "system": "macOS-27.0.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "processor": "arm",
+    "torch_threads": 1,
+    "torch_version": "2.14.1",
+    "device": "cpu",
+    "dtype": "float32",
+    "entities_per_call": 1
+  },
+  "predictions_sha256": "306b544d6b31bec1cb6cf9146816552167bebfcfd5995156c451d4c6deaf93ab",
+  "task_contract": {
+    "input_version": 1,
+    "task": "rte-hourly-24-v1",
+    "dataset": "rte",
+    "history_length": 1344,
+    "horizon": 24,
+    "frequency": "h",
+    "utc": true,
+    "calendar_timezone": "Europe/Paris",
+    "missing_policy": "complete",
+    "tracks": {
+      "target_only": [
+        [],
+        []
+      ],
+      "calendar": [
+        [],
+        [
+          "hour",
+          "weekday"
+        ]
+      ]
+    }
+  },
+  "timings": [
+    {
+      "entity": "11",
+      "track": "target_only",
+      "forecast_start": "2024-01-08 00:00:00+00:00",
+      "seconds": 0.09831245796522126
+    },
+    {
+      "entity": "11",
+      "track": "target_only",
+      "forecast_start": "2024-01-22 00:00:00+00:00",
+      "seconds": 0.09735250001540408
+    },
+    {
+      "entity": "11",
+      "track": "target_only",
+      "forecast_start": "2024-02-08 00:00:00+00:00",
+      "seconds": 0.09653412498300895
+    },
+    {
+      "entity": "11",
+      "track": "target_only",
+      "forecast_start": "2024-02-22 00:00:00+00:00",
+      "seconds": 0.09749004198238254
+    },
+    {
+      "entity": "11",
+      "track": "target_only",
+      "forecast_start": "2024-03-08 00:00:00+00:00",
+      "seconds": 0.09790387499378994
+    },
+    {
+      "entity": "11",
+      "track": "target_only",
+      "forecast_start": "2024-03-22 00:00:00+00:00",
+      "seconds": 0.09957745898282155
+    },
+    {
+      "entity": "11",
+      "track": "target_only",
+      "forecast_start": "2024-04-08 00:00:00+00:00",
+      "seconds": 0.09946791699621826
+    },
+    {
+      "entity": "11",
+      "track": "target_only",
+      "forecast_start": "2024-04-22 00:00:00+00:00",
+      "seconds": 0.10108312498778105
+    },
+    {
+      "entity": "11",
+      "track": "target_only",
+      "forecast_start": "2024-05-08 00:00:00+00:00",
+      "seconds": 0.10271841700887308
+    },
+    {
+      "entity": "11",
+      "track": "target_only",
+      "forecast_start": "2024-05-22 00:00:00+00:00",
+      "seconds": 0.10321716603357345
+    },
+    {
+      "entity": "11",
+      "track": "target_only",
+      "forecast_start": "2024-06-08 00:00:00+00:00",
+      "seconds": 0.10332008299883455
+    },
+    {
+      "entity": "11",
+      "track": "target_only",
+      "forecast_start": "2024-06-22 00:00:00+00:00",
+      "seconds": 0.10199437499977648
+    },
+    {
+      "entity": "11",
+      "track": "target_only",
+      "forecast_start": "2024-07-08 00:00:00+00:00",
+      "seconds": 0.0980273750028573
+    },
+    {
+      "entity": "11",
+      "track": "target_only",
+      "forecast_start": "2024-07-22 00:00:00+00:00",
+      "seconds": 0.10063187498599291
+    },
+    {
+      "entity": "11",
+      "track": "target_only",
+      "forecast_start": "2024-08-08 00:00:00+00:00",
+      "seconds": 0.09791108401259407
+    },
+    {
+      "entity": "11",
+      "track": "target_only",
+      "forecast_start": "2024-08-22 00:00:00+00:00",
+      "seconds": 0.0987497090245597
+    },
+    {
+      "entity": "11",
+      "track": "target_only",
+      "forecast_start": "2024-09-08 00:00:00+00:00",
+      "seconds": 0.16748629201902077
+    },
+    {
+      "entity": "11",
+      "track": "target_only",
+      "forecast_start": "2024-09-22 00:00:00+00:00",
+      "seconds": 0.3359845840022899
+    },
+    {
+      "entity": "11",
+      "track": "target_only",
+      "forecast_start": "2024-10-08 00:00:00+00:00",
+      "seconds": 0.3313602919806726
+    },
+    {
+      "entity": "11",
+      "track": "target_only",
+      "forecast_start": "2024-10-22 00:00:00+00:00",
+      "seconds": 0.32928408397128806
+    },
+    {
+      "entity": "32",
+      "track": "target_only",
+      "forecast_start": "2024-01-08 00:00:00+00:00",
+      "seconds": 0.324728750041686
+    },
+    {
+      "entity": "32",
+      "track": "target_only",
+      "forecast_start": "2024-01-22 00:00:00+00:00",
+      "seconds": 0.32916095899417996
+    },
+    {
+      "entity": "32",
+      "track": "target_only",
+      "forecast_start": "2024-02-08 00:00:00+00:00",
+      "seconds": 0.3289282919722609
+    },
+    {
+      "entity": "32",
+      "track": "target_only",
+      "forecast_start": "2024-02-22 00:00:00+00:00",
+      "seconds": 0.327173458004836
+    },
+    {
+      "entity": "32",
+      "track": "target_only",
+      "forecast_start": "2024-03-08 00:00:00+00:00",
+      "seconds": 0.3279001250048168
+    },
+    {
+      "entity": "32",
+      "track": "target_only",
+      "forecast_start": "2024-03-22 00:00:00+00:00",
+      "seconds": 0.3285011249827221
+    },
+    {
+      "entity": "32",
+      "track": "target_only",
+      "forecast_start": "2024-04-08 00:00:00+00:00",
+      "seconds": 0.3279930829885416
+    },
+    {
+      "entity": "32",
+      "track": "target_only",
+      "forecast_start": "2024-04-22 00:00:00+00:00",
+      "seconds": 0.33223641698714346
+    },
+    {
+      "entity": "32",
+      "track": "target_only",
+      "forecast_start": "2024-05-08 00:00:00+00:00",
+      "seconds": 0.33126920799259096
+    },
+    {
+      "entity": "32",
+      "track": "target_only",
+      "forecast_start": "2024-05-22 00:00:00+00:00",
+      "seconds": 0.3312114159925841
+    },
+    {
+      "entity": "32",
+      "track": "target_only",
+      "forecast_start": "2024-06-08 00:00:00+00:00",
+      "seconds": 0.32659791596233845
+    },
+    {
+      "entity": "32",
+      "track": "target_only",
+      "forecast_start": "2024-06-22 00:00:00+00:00",
+      "seconds": 0.1566174579784274
+    },
+    {
+      "entity": "32",
+      "track": "target_only",
+      "forecast_start": "2024-07-08 00:00:00+00:00",
+      "seconds": 0.09544504102086648
+    },
+    {
+      "entity": "32",
+      "track": "target_only",
+      "forecast_start": "2024-07-22 00:00:00+00:00",
+      "seconds": 0.09529920801287517
+    },
+    {
+      "entity": "32",
+      "track": "target_only",
+      "forecast_start": "2024-08-08 00:00:00+00:00",
+      "seconds": 0.09648675000062212
+    },
+    {
+      "entity": "32",
+      "track": "target_only",
+      "forecast_start": "2024-08-22 00:00:00+00:00",
+      "seconds": 0.09568929200759158
+    },
+    {
+      "entity": "32",
+      "track": "target_only",
+      "forecast_start": "2024-09-08 00:00:00+00:00",
+      "seconds": 0.09553395805414766
+    },
+    {
+      "entity": "32",
+      "track": "target_only",
+      "forecast_start": "2024-09-22 00:00:00+00:00",
+      "seconds": 0.09607841703109443
+    },
+    {
+      "entity": "32",
+      "track": "target_only",
+      "forecast_start": "2024-10-08 00:00:00+00:00",
+      "seconds": 0.09593591600423679
+    },
+    {
+      "entity": "32",
+      "track": "target_only",
+      "forecast_start": "2024-10-22 00:00:00+00:00",
+      "seconds": 0.09585949999745935
+    },
+    {
+      "entity": "44",
+      "track": "target_only",
+      "forecast_start": "2024-01-08 00:00:00+00:00",
+      "seconds": 0.09600424999371171
+    },
+    {
+      "entity": "44",
+      "track": "target_only",
+      "forecast_start": "2024-01-22 00:00:00+00:00",
+      "seconds": 0.09564354200847447
+    },
+    {
+      "entity": "44",
+      "track": "target_only",
+      "forecast_start": "2024-02-08 00:00:00+00:00",
+      "seconds": 0.09596141701331362
+    },
+    {
+      "entity": "44",
+      "track": "target_only",
+      "forecast_start": "2024-02-22 00:00:00+00:00",
+      "seconds": 0.09591541602276266
+    },
+    {
+      "entity": "44",
+      "track": "target_only",
+      "forecast_start": "2024-03-08 00:00:00+00:00",
+      "seconds": 0.09576070797629654
+    },
+    {
+      "entity": "44",
+      "track": "target_only",
+      "forecast_start": "2024-03-22 00:00:00+00:00",
+      "seconds": 0.09542258299188688
+    },
+    {
+      "entity": "44",
+      "track": "target_only",
+      "forecast_start": "2024-04-08 00:00:00+00:00",
+      "seconds": 0.09539779199985787
+    },
+    {
+      "entity": "44",
+      "track": "target_only",
+      "forecast_start": "2024-04-22 00:00:00+00:00",
+      "seconds": 0.09607529098866507
+    },
+    {
+      "entity": "44",
+      "track": "target_only",
+      "forecast_start": "2024-05-08 00:00:00+00:00",
+      "seconds": 0.09573875000933185
+    },
+    {
+      "entity": "44",
+      "track": "target_only",
+      "forecast_start": "2024-05-22 00:00:00+00:00",
+      "seconds": 0.09695095801725984
+    },
+    {
+      "entity": "44",
+      "track": "target_only",
+      "forecast_start": "2024-06-08 00:00:00+00:00",
+      "seconds": 0.09579941700212657
+    },
+    {
+      "entity": "44",
+      "track": "target_only",
+      "forecast_start": "2024-06-22 00:00:00+00:00",
+      "seconds": 0.09576845896663144
+    },
+    {
+      "entity": "44",
+      "track": "target_only",
+      "forecast_start": "2024-07-08 00:00:00+00:00",
+      "seconds": 0.09525716601638123
+    },
+    {
+      "entity": "44",
+      "track": "target_only",
+      "forecast_start": "2024-07-22 00:00:00+00:00",
+      "seconds": 0.09585295798024163
+    },
+    {
+      "entity": "44",
+      "track": "target_only",
+      "forecast_start": "2024-08-08 00:00:00+00:00",
+      "seconds": 0.09569074999308214
+    },
+    {
+      "entity": "44",
+      "track": "target_only",
+      "forecast_start": "2024-08-22 00:00:00+00:00",
+      "seconds": 0.09510625002440065
+    },
+    {
+      "entity": "44",
+      "track": "target_only",
+      "forecast_start": "2024-09-08 00:00:00+00:00",
+      "seconds": 0.09468720899894834
+    },
+    {
+      "entity": "44",
+      "track": "target_only",
+      "forecast_start": "2024-09-22 00:00:00+00:00",
+      "seconds": 0.09434945799876004
+    },
+    {
+      "entity": "44",
+      "track": "target_only",
+      "forecast_start": "2024-10-08 00:00:00+00:00",
+      "seconds": 0.09307566698407754
+    },
+    {
+      "entity": "44",
+      "track": "target_only",
+      "forecast_start": "2024-10-22 00:00:00+00:00",
+      "seconds": 0.09280658402713016
+    },
+    {
+      "entity": "53",
+      "track": "target_only",
+      "forecast_start": "2024-01-08 00:00:00+00:00",
+      "seconds": 0.09321199997793883
+    },
+    {
+      "entity": "53",
+      "track": "target_only",
+      "forecast_start": "2024-01-22 00:00:00+00:00",
+      "seconds": 0.09202833299059421
+    },
+    {
+      "entity": "53",
+      "track": "target_only",
+      "forecast_start": "2024-02-08 00:00:00+00:00",
+      "seconds": 0.09306587500032037
+    },
+    {
+      "entity": "53",
+      "track": "target_only",
+      "forecast_start": "2024-02-22 00:00:00+00:00",
+      "seconds": 0.09256895800353959
+    },
+    {
+      "entity": "53",
+      "track": "target_only",
+      "forecast_start": "2024-03-08 00:00:00+00:00",
+      "seconds": 0.09263641701545566
+    },
+    {
+      "entity": "53",
+      "track": "target_only",
+      "forecast_start": "2024-03-22 00:00:00+00:00",
+      "seconds": 0.09281420899787918
+    },
+    {
+      "entity": "53",
+      "track": "target_only",
+      "forecast_start": "2024-04-08 00:00:00+00:00",
+      "seconds": 0.0917633330100216
+    },
+    {
+      "entity": "53",
+      "track": "target_only",
+      "forecast_start": "2024-04-22 00:00:00+00:00",
+      "seconds": 0.0918960829731077
+    },
+    {
+      "entity": "53",
+      "track": "target_only",
+      "forecast_start": "2024-05-08 00:00:00+00:00",
+      "seconds": 0.09265829098876566
+    },
+    {
+      "entity": "53",
+      "track": "target_only",
+      "forecast_start": "2024-05-22 00:00:00+00:00",
+      "seconds": 0.09279920801054686
+    },
+    {
+      "entity": "53",
+      "track": "target_only",
+      "forecast_start": "2024-06-08 00:00:00+00:00",
+      "seconds": 0.09270166599890217
+    },
+    {
+      "entity": "53",
+      "track": "target_only",
+      "forecast_start": "2024-06-22 00:00:00+00:00",
+      "seconds": 0.09239008300937712
+    },
+    {
+      "entity": "53",
+      "track": "target_only",
+      "forecast_start": "2024-07-08 00:00:00+00:00",
+      "seconds": 0.09255654196022078
+    },
+    {
+      "entity": "53",
+      "track": "target_only",
+      "forecast_start": "2024-07-22 00:00:00+00:00",
+      "seconds": 0.09236045798752457
+    },
+    {
+      "entity": "53",
+      "track": "target_only",
+      "forecast_start": "2024-08-08 00:00:00+00:00",
+      "seconds": 0.09227233298588544
+    },
+    {
+      "entity": "53",
+      "track": "target_only",
+      "forecast_start": "2024-08-22 00:00:00+00:00",
+      "seconds": 0.09198954200837761
+    },
+    {
+      "entity": "53",
+      "track": "target_only",
+      "forecast_start": "2024-09-08 00:00:00+00:00",
+      "seconds": 0.09187195799313486
+    },
+    {
+      "entity": "53",
+      "track": "target_only",
+      "forecast_start": "2024-09-22 00:00:00+00:00",
+      "seconds": 0.0929166249698028
+    },
+    {
+      "entity": "53",
+      "track": "target_only",
+      "forecast_start": "2024-10-08 00:00:00+00:00",
+      "seconds": 0.09328783396631479
+    },
+    {
+      "entity": "53",
+      "track": "target_only",
+      "forecast_start": "2024-10-22 00:00:00+00:00",
+      "seconds": 0.09316016698721796
+    },
+    {
+      "entity": "76",
+      "track": "target_only",
+      "forecast_start": "2024-01-08 00:00:00+00:00",
+      "seconds": 0.0928899580030702
+    },
+    {
+      "entity": "76",
+      "track": "target_only",
+      "forecast_start": "2024-01-22 00:00:00+00:00",
+      "seconds": 0.09203354100463912
+    },
+    {
+      "entity": "76",
+      "track": "target_only",
+      "forecast_start": "2024-02-08 00:00:00+00:00",
+      "seconds": 0.092985833005514
+    },
+    {
+      "entity": "76",
+      "track": "target_only",
+      "forecast_start": "2024-02-22 00:00:00+00:00",
+      "seconds": 0.09248058299999684
+    },
+    {
+      "entity": "76",
+      "track": "target_only",
+      "forecast_start": "2024-03-08 00:00:00+00:00",
+      "seconds": 0.09239441703539342
+    },
+    {
+      "entity": "76",
+      "track": "target_only",
+      "forecast_start": "2024-03-22 00:00:00+00:00",
+      "seconds": 0.09233512496575713
+    },
+    {
+      "entity": "76",
+      "track": "target_only",
+      "forecast_start": "2024-04-08 00:00:00+00:00",
+      "seconds": 0.0919551249826327
+    },
+    {
+      "entity": "76",
+      "track": "target_only",
+      "forecast_start": "2024-04-22 00:00:00+00:00",
+      "seconds": 0.09190037497319281
+    },
+    {
+      "entity": "76",
+      "track": "target_only",
+      "forecast_start": "2024-05-08 00:00:00+00:00",
+      "seconds": 0.09257070801686496
+    },
+    {
+      "entity": "76",
+      "track": "target_only",
+      "forecast_start": "2024-05-22 00:00:00+00:00",
+      "seconds": 0.09292204101802781
+    },
+    {
+      "entity": "76",
+      "track": "target_only",
+      "forecast_start": "2024-06-08 00:00:00+00:00",
+      "seconds": 0.09291824995307252
+    },
+    {
+      "entity": "76",
+      "track": "target_only",
+      "forecast_start": "2024-06-22 00:00:00+00:00",
+      "seconds": 0.09235799999441952
+    },
+    {
+      "entity": "76",
+      "track": "target_only",
+      "forecast_start": "2024-07-08 00:00:00+00:00",
+      "seconds": 0.09260029101278633
+    },
+    {
+      "entity": "76",
+      "track": "target_only",
+      "forecast_start": "2024-07-22 00:00:00+00:00",
+      "seconds": 0.09237216599285603
+    },
+    {
+      "entity": "76",
+      "track": "target_only",
+      "forecast_start": "2024-08-08 00:00:00+00:00",
+      "seconds": 0.09228345897281542
+    },
+    {
+      "entity": "76",
+      "track": "target_only",
+      "forecast_start": "2024-08-22 00:00:00+00:00",
+      "seconds": 0.09260833298321813
+    },
+    {
+      "entity": "76",
+      "track": "target_only",
+      "forecast_start": "2024-09-08 00:00:00+00:00",
+      "seconds": 0.09188304201234132
+    },
+    {
+      "entity": "76",
+      "track": "target_only",
+      "forecast_start": "2024-09-22 00:00:00+00:00",
+      "seconds": 0.09203979198355228
+    },
+    {
+      "entity": "76",
+      "track": "target_only",
+      "forecast_start": "2024-10-08 00:00:00+00:00",
+      "seconds": 0.09263858397025615
+    },
+    {
+      "entity": "76",
+      "track": "target_only",
+      "forecast_start": "2024-10-22 00:00:00+00:00",
+      "seconds": 0.09250308305490762
+    },
+    {
+      "entity": "93",
+      "track": "target_only",
+      "forecast_start": "2024-01-08 00:00:00+00:00",
+      "seconds": 0.0929122079978697
+    },
+    {
+      "entity": "93",
+      "track": "target_only",
+      "forecast_start": "2024-01-22 00:00:00+00:00",
+      "seconds": 0.09199525002622977
+    },
+    {
+      "entity": "93",
+      "track": "target_only",
+      "forecast_start": "2024-02-08 00:00:00+00:00",
+      "seconds": 0.09306208399357274
+    },
+    {
+      "entity": "93",
+      "track": "target_only",
+      "forecast_start": "2024-02-22 00:00:00+00:00",
+      "seconds": 0.09306283300975338
+    },
+    {
+      "entity": "93",
+      "track": "target_only",
+      "forecast_start": "2024-03-08 00:00:00+00:00",
+      "seconds": 0.09350970905506983
+    },
+    {
+      "entity": "93",
+      "track": "target_only",
+      "forecast_start": "2024-03-22 00:00:00+00:00",
+      "seconds": 0.09348149999277666
+    },
+    {
+      "entity": "93",
+      "track": "target_only",
+      "forecast_start": "2024-04-08 00:00:00+00:00",
+      "seconds": 0.09272129100281745
+    },
+    {
+      "entity": "93",
+      "track": "target_only",
+      "forecast_start": "2024-04-22 00:00:00+00:00",
+      "seconds": 0.09210966603131965
+    },
+    {
+      "entity": "93",
+      "track": "target_only",
+      "forecast_start": "2024-05-08 00:00:00+00:00",
+      "seconds": 0.0938992919982411
+    },
+    {
+      "entity": "93",
+      "track": "target_only",
+      "forecast_start": "2024-05-22 00:00:00+00:00",
+      "seconds": 0.09305970801506191
+    },
+    {
+      "entity": "93",
+      "track": "target_only",
+      "forecast_start": "2024-06-08 00:00:00+00:00",
+      "seconds": 0.09295520803425461
+    },
+    {
+      "entity": "93",
+      "track": "target_only",
+      "forecast_start": "2024-06-22 00:00:00+00:00",
+      "seconds": 0.09222520800540224
+    },
+    {
+      "entity": "93",
+      "track": "target_only",
+      "forecast_start": "2024-07-08 00:00:00+00:00",
+      "seconds": 0.09271829202771187
+    },
+    {
+      "entity": "93",
+      "track": "target_only",
+      "forecast_start": "2024-07-22 00:00:00+00:00",
+      "seconds": 0.09228795900708064
+    },
+    {
+      "entity": "93",
+      "track": "target_only",
+      "forecast_start": "2024-08-08 00:00:00+00:00",
+      "seconds": 0.09234958403976634
+    },
+    {
+      "entity": "93",
+      "track": "target_only",
+      "forecast_start": "2024-08-22 00:00:00+00:00",
+      "seconds": 0.09362025000154972
+    },
+    {
+      "entity": "93",
+      "track": "target_only",
+      "forecast_start": "2024-09-08 00:00:00+00:00",
+      "seconds": 0.09222491702530533
+    },
+    {
+      "entity": "93",
+      "track": "target_only",
+      "forecast_start": "2024-09-22 00:00:00+00:00",
+      "seconds": 0.09189275000244379
+    },
+    {
+      "entity": "93",
+      "track": "target_only",
+      "forecast_start": "2024-10-08 00:00:00+00:00",
+      "seconds": 0.09267562499735504
+    },
+    {
+      "entity": "93",
+      "track": "target_only",
+      "forecast_start": "2024-10-22 00:00:00+00:00",
+      "seconds": 0.09264495800016448
+    },
+    {
+      "entity": "11",
+      "track": "calendar",
+      "forecast_start": "2024-01-08 00:00:00+00:00",
+      "seconds": 0.30872550001367927
+    },
+    {
+      "entity": "11",
+      "track": "calendar",
+      "forecast_start": "2024-01-22 00:00:00+00:00",
+      "seconds": 0.30858437495771796
+    },
+    {
+      "entity": "11",
+      "track": "calendar",
+      "forecast_start": "2024-02-08 00:00:00+00:00",
+      "seconds": 0.30895408301148564
+    },
+    {
+      "entity": "11",
+      "track": "calendar",
+      "forecast_start": "2024-02-22 00:00:00+00:00",
+      "seconds": 0.3093956250231713
+    },
+    {
+      "entity": "11",
+      "track": "calendar",
+      "forecast_start": "2024-03-08 00:00:00+00:00",
+      "seconds": 0.3091257080086507
+    },
+    {
+      "entity": "11",
+      "track": "calendar",
+      "forecast_start": "2024-03-22 00:00:00+00:00",
+      "seconds": 0.30900766694685444
+    },
+    {
+      "entity": "11",
+      "track": "calendar",
+      "forecast_start": "2024-04-08 00:00:00+00:00",
+      "seconds": 0.3090208329958841
+    },
+    {
+      "entity": "11",
+      "track": "calendar",
+      "forecast_start": "2024-04-22 00:00:00+00:00",
+      "seconds": 0.3090570829808712
+    },
+    {
+      "entity": "11",
+      "track": "calendar",
+      "forecast_start": "2024-05-08 00:00:00+00:00",
+      "seconds": 0.3093667080393061
+    },
+    {
+      "entity": "11",
+      "track": "calendar",
+      "forecast_start": "2024-05-22 00:00:00+00:00",
+      "seconds": 0.30900375003693625
+    },
+    {
+      "entity": "11",
+      "track": "calendar",
+      "forecast_start": "2024-06-08 00:00:00+00:00",
+      "seconds": 0.30875054199714214
+    },
+    {
+      "entity": "11",
+      "track": "calendar",
+      "forecast_start": "2024-06-22 00:00:00+00:00",
+      "seconds": 0.30864900001324713
+    },
+    {
+      "entity": "11",
+      "track": "calendar",
+      "forecast_start": "2024-07-08 00:00:00+00:00",
+      "seconds": 0.31014204100938514
+    },
+    {
+      "entity": "11",
+      "track": "calendar",
+      "forecast_start": "2024-07-22 00:00:00+00:00",
+      "seconds": 0.3092676660162397
+    },
+    {
+      "entity": "11",
+      "track": "calendar",
+      "forecast_start": "2024-08-08 00:00:00+00:00",
+      "seconds": 0.3098379169823602
+    },
+    {
+      "entity": "11",
+      "track": "calendar",
+      "forecast_start": "2024-08-22 00:00:00+00:00",
+      "seconds": 0.3097985000349581
+    },
+    {
+      "entity": "11",
+      "track": "calendar",
+      "forecast_start": "2024-09-08 00:00:00+00:00",
+      "seconds": 0.3097322499961592
+    },
+    {
+      "entity": "11",
+      "track": "calendar",
+      "forecast_start": "2024-09-22 00:00:00+00:00",
+      "seconds": 0.3092128330026753
+    },
+    {
+      "entity": "11",
+      "track": "calendar",
+      "forecast_start": "2024-10-08 00:00:00+00:00",
+      "seconds": 0.3099966250010766
+    },
+    {
+      "entity": "11",
+      "track": "calendar",
+      "forecast_start": "2024-10-22 00:00:00+00:00",
+      "seconds": 0.3091069169458933
+    },
+    {
+      "entity": "32",
+      "track": "calendar",
+      "forecast_start": "2024-01-08 00:00:00+00:00",
+      "seconds": 0.30981062503997236
+    },
+    {
+      "entity": "32",
+      "track": "calendar",
+      "forecast_start": "2024-01-22 00:00:00+00:00",
+      "seconds": 0.30915375001495704
+    },
+    {
+      "entity": "32",
+      "track": "calendar",
+      "forecast_start": "2024-02-08 00:00:00+00:00",
+      "seconds": 0.30981312500080094
+    },
+    {
+      "entity": "32",
+      "track": "calendar",
+      "forecast_start": "2024-02-22 00:00:00+00:00",
+      "seconds": 0.3087497089873068
+    },
+    {
+      "entity": "32",
+      "track": "calendar",
+      "forecast_start": "2024-03-08 00:00:00+00:00",
+      "seconds": 0.30897412495687604
+    },
+    {
+      "entity": "32",
+      "track": "calendar",
+      "forecast_start": "2024-03-22 00:00:00+00:00",
+      "seconds": 0.30919445800827816
+    },
+    {
+      "entity": "32",
+      "track": "calendar",
+      "forecast_start": "2024-04-08 00:00:00+00:00",
+      "seconds": 0.30869512498611584
+    },
+    {
+      "entity": "32",
+      "track": "calendar",
+      "forecast_start": "2024-04-22 00:00:00+00:00",
+      "seconds": 0.30816304200561717
+    },
+    {
+      "entity": "32",
+      "track": "calendar",
+      "forecast_start": "2024-05-08 00:00:00+00:00",
+      "seconds": 0.3091410839697346
+    },
+    {
+      "entity": "32",
+      "track": "calendar",
+      "forecast_start": "2024-05-22 00:00:00+00:00",
+      "seconds": 0.30904462502803653
+    },
+    {
+      "entity": "32",
+      "track": "calendar",
+      "forecast_start": "2024-06-08 00:00:00+00:00",
+      "seconds": 0.3093240829766728
+    },
+    {
+      "entity": "32",
+      "track": "calendar",
+      "forecast_start": "2024-06-22 00:00:00+00:00",
+      "seconds": 0.30902704200707376
+    },
+    {
+      "entity": "32",
+      "track": "calendar",
+      "forecast_start": "2024-07-08 00:00:00+00:00",
+      "seconds": 0.3090839579817839
+    },
+    {
+      "entity": "32",
+      "track": "calendar",
+      "forecast_start": "2024-07-22 00:00:00+00:00",
+      "seconds": 0.30910070799291134
+    },
+    {
+      "entity": "32",
+      "track": "calendar",
+      "forecast_start": "2024-08-08 00:00:00+00:00",
+      "seconds": 0.30986758397193626
+    },
+    {
+      "entity": "32",
+      "track": "calendar",
+      "forecast_start": "2024-08-22 00:00:00+00:00",
+      "seconds": 0.3095847080112435
+    },
+    {
+      "entity": "32",
+      "track": "calendar",
+      "forecast_start": "2024-09-08 00:00:00+00:00",
+      "seconds": 0.30882545898202807
+    },
+    {
+      "entity": "32",
+      "track": "calendar",
+      "forecast_start": "2024-09-22 00:00:00+00:00",
+      "seconds": 0.30893837503390387
+    },
+    {
+      "entity": "32",
+      "track": "calendar",
+      "forecast_start": "2024-10-08 00:00:00+00:00",
+      "seconds": 0.31164379097754136
+    },
+    {
+      "entity": "32",
+      "track": "calendar",
+      "forecast_start": "2024-10-22 00:00:00+00:00",
+      "seconds": 0.31154362502275035
+    },
+    {
+      "entity": "44",
+      "track": "calendar",
+      "forecast_start": "2024-01-08 00:00:00+00:00",
+      "seconds": 0.30878950003534555
+    },
+    {
+      "entity": "44",
+      "track": "calendar",
+      "forecast_start": "2024-01-22 00:00:00+00:00",
+      "seconds": 0.30957620800472796
+    },
+    {
+      "entity": "44",
+      "track": "calendar",
+      "forecast_start": "2024-02-08 00:00:00+00:00",
+      "seconds": 0.3084498749813065
+    },
+    {
+      "entity": "44",
+      "track": "calendar",
+      "forecast_start": "2024-02-22 00:00:00+00:00",
+      "seconds": 0.30862329195952043
+    },
+    {
+      "entity": "44",
+      "track": "calendar",
+      "forecast_start": "2024-03-08 00:00:00+00:00",
+      "seconds": 0.3092821250320412
+    },
+    {
+      "entity": "44",
+      "track": "calendar",
+      "forecast_start": "2024-03-22 00:00:00+00:00",
+      "seconds": 0.3091758330119774
+    },
+    {
+      "entity": "44",
+      "track": "calendar",
+      "forecast_start": "2024-04-08 00:00:00+00:00",
+      "seconds": 0.30881004099501297
+    },
+    {
+      "entity": "44",
+      "track": "calendar",
+      "forecast_start": "2024-04-22 00:00:00+00:00",
+      "seconds": 0.30970995797542855
+    },
+    {
+      "entity": "44",
+      "track": "calendar",
+      "forecast_start": "2024-05-08 00:00:00+00:00",
+      "seconds": 0.3118520000134595
+    },
+    {
+      "entity": "44",
+      "track": "calendar",
+      "forecast_start": "2024-05-22 00:00:00+00:00",
+      "seconds": 0.309221959032584
+    },
+    {
+      "entity": "44",
+      "track": "calendar",
+      "forecast_start": "2024-06-08 00:00:00+00:00",
+      "seconds": 0.31044650002149865
+    },
+    {
+      "entity": "44",
+      "track": "calendar",
+      "forecast_start": "2024-06-22 00:00:00+00:00",
+      "seconds": 0.3103880420094356
+    },
+    {
+      "entity": "44",
+      "track": "calendar",
+      "forecast_start": "2024-07-08 00:00:00+00:00",
+      "seconds": 0.3089732499793172
+    },
+    {
+      "entity": "44",
+      "track": "calendar",
+      "forecast_start": "2024-07-22 00:00:00+00:00",
+      "seconds": 0.3094056249829009
+    },
+    {
+      "entity": "44",
+      "track": "calendar",
+      "forecast_start": "2024-08-08 00:00:00+00:00",
+      "seconds": 0.315625041956082
+    },
+    {
+      "entity": "44",
+      "track": "calendar",
+      "forecast_start": "2024-08-22 00:00:00+00:00",
+      "seconds": 0.3097930409712717
+    },
+    {
+      "entity": "44",
+      "track": "calendar",
+      "forecast_start": "2024-09-08 00:00:00+00:00",
+      "seconds": 0.30907566600944847
+    },
+    {
+      "entity": "44",
+      "track": "calendar",
+      "forecast_start": "2024-09-22 00:00:00+00:00",
+      "seconds": 0.30936533404747024
+    },
+    {
+      "entity": "44",
+      "track": "calendar",
+      "forecast_start": "2024-10-08 00:00:00+00:00",
+      "seconds": 0.3085924999904819
+    },
+    {
+      "entity": "44",
+      "track": "calendar",
+      "forecast_start": "2024-10-22 00:00:00+00:00",
+      "seconds": 0.31137312500504777
+    },
+    {
+      "entity": "53",
+      "track": "calendar",
+      "forecast_start": "2024-01-08 00:00:00+00:00",
+      "seconds": 0.309824041032698
+    },
+    {
+      "entity": "53",
+      "track": "calendar",
+      "forecast_start": "2024-01-22 00:00:00+00:00",
+      "seconds": 0.30844404199160635
+    },
+    {
+      "entity": "53",
+      "track": "calendar",
+      "forecast_start": "2024-02-08 00:00:00+00:00",
+      "seconds": 0.30883437499869615
+    },
+    {
+      "entity": "53",
+      "track": "calendar",
+      "forecast_start": "2024-02-22 00:00:00+00:00",
+      "seconds": 0.3089538750355132
+    },
+    {
+      "entity": "53",
+      "track": "calendar",
+      "forecast_start": "2024-03-08 00:00:00+00:00",
+      "seconds": 0.308917916030623
+    },
+    {
+      "entity": "53",
+      "track": "calendar",
+      "forecast_start": "2024-03-22 00:00:00+00:00",
+      "seconds": 0.30903499998385087
+    },
+    {
+      "entity": "53",
+      "track": "calendar",
+      "forecast_start": "2024-04-08 00:00:00+00:00",
+      "seconds": 0.30898425000486895
+    },
+    {
+      "entity": "53",
+      "track": "calendar",
+      "forecast_start": "2024-04-22 00:00:00+00:00",
+      "seconds": 0.30597308301366866
+    },
+    {
+      "entity": "53",
+      "track": "calendar",
+      "forecast_start": "2024-05-08 00:00:00+00:00",
+      "seconds": 0.3061644589761272
+    },
+    {
+      "entity": "53",
+      "track": "calendar",
+      "forecast_start": "2024-05-22 00:00:00+00:00",
+      "seconds": 0.3062147909658961
+    },
+    {
+      "entity": "53",
+      "track": "calendar",
+      "forecast_start": "2024-06-08 00:00:00+00:00",
+      "seconds": 0.3058263750281185
+    },
+    {
+      "entity": "53",
+      "track": "calendar",
+      "forecast_start": "2024-06-22 00:00:00+00:00",
+      "seconds": 0.30635516601614654
+    },
+    {
+      "entity": "53",
+      "track": "calendar",
+      "forecast_start": "2024-07-08 00:00:00+00:00",
+      "seconds": 0.3053293749690056
+    },
+    {
+      "entity": "53",
+      "track": "calendar",
+      "forecast_start": "2024-07-22 00:00:00+00:00",
+      "seconds": 0.30588129098759964
+    },
+    {
+      "entity": "53",
+      "track": "calendar",
+      "forecast_start": "2024-08-08 00:00:00+00:00",
+      "seconds": 0.30589887499809265
+    },
+    {
+      "entity": "53",
+      "track": "calendar",
+      "forecast_start": "2024-08-22 00:00:00+00:00",
+      "seconds": 0.30567104200599715
+    },
+    {
+      "entity": "53",
+      "track": "calendar",
+      "forecast_start": "2024-09-08 00:00:00+00:00",
+      "seconds": 0.30623087496496737
+    },
+    {
+      "entity": "53",
+      "track": "calendar",
+      "forecast_start": "2024-09-22 00:00:00+00:00",
+      "seconds": 0.30632412497652695
+    },
+    {
+      "entity": "53",
+      "track": "calendar",
+      "forecast_start": "2024-10-08 00:00:00+00:00",
+      "seconds": 0.3064127909601666
+    },
+    {
+      "entity": "53",
+      "track": "calendar",
+      "forecast_start": "2024-10-22 00:00:00+00:00",
+      "seconds": 0.3076730000320822
+    },
+    {
+      "entity": "76",
+      "track": "calendar",
+      "forecast_start": "2024-01-08 00:00:00+00:00",
+      "seconds": 0.30593979195691645
+    },
+    {
+      "entity": "76",
+      "track": "calendar",
+      "forecast_start": "2024-01-22 00:00:00+00:00",
+      "seconds": 0.3062377499882132
+    },
+    {
+      "entity": "76",
+      "track": "calendar",
+      "forecast_start": "2024-02-08 00:00:00+00:00",
+      "seconds": 0.30675158300437033
+    },
+    {
+      "entity": "76",
+      "track": "calendar",
+      "forecast_start": "2024-02-22 00:00:00+00:00",
+      "seconds": 0.3066932500223629
+    },
+    {
+      "entity": "76",
+      "track": "calendar",
+      "forecast_start": "2024-03-08 00:00:00+00:00",
+      "seconds": 0.3067968749674037
+    },
+    {
+      "entity": "76",
+      "track": "calendar",
+      "forecast_start": "2024-03-22 00:00:00+00:00",
+      "seconds": 0.3064194170292467
+    },
+    {
+      "entity": "76",
+      "track": "calendar",
+      "forecast_start": "2024-04-08 00:00:00+00:00",
+      "seconds": 0.3063202080084011
+    },
+    {
+      "entity": "76",
+      "track": "calendar",
+      "forecast_start": "2024-04-22 00:00:00+00:00",
+      "seconds": 0.3061005410272628
+    },
+    {
+      "entity": "76",
+      "track": "calendar",
+      "forecast_start": "2024-05-08 00:00:00+00:00",
+      "seconds": 0.30563458299729973
+    },
+    {
+      "entity": "76",
+      "track": "calendar",
+      "forecast_start": "2024-05-22 00:00:00+00:00",
+      "seconds": 0.3061073750141077
+    },
+    {
+      "entity": "76",
+      "track": "calendar",
+      "forecast_start": "2024-06-08 00:00:00+00:00",
+      "seconds": 0.30572329100687057
+    },
+    {
+      "entity": "76",
+      "track": "calendar",
+      "forecast_start": "2024-06-22 00:00:00+00:00",
+      "seconds": 0.30733770900405943
+    },
+    {
+      "entity": "76",
+      "track": "calendar",
+      "forecast_start": "2024-07-08 00:00:00+00:00",
+      "seconds": 0.307003750000149
+    },
+    {
+      "entity": "76",
+      "track": "calendar",
+      "forecast_start": "2024-07-22 00:00:00+00:00",
+      "seconds": 0.30567908397642896
+    },
+    {
+      "entity": "76",
+      "track": "calendar",
+      "forecast_start": "2024-08-08 00:00:00+00:00",
+      "seconds": 0.3054529159562662
+    },
+    {
+      "entity": "76",
+      "track": "calendar",
+      "forecast_start": "2024-08-22 00:00:00+00:00",
+      "seconds": 0.3058270000037737
+    },
+    {
+      "entity": "76",
+      "track": "calendar",
+      "forecast_start": "2024-09-08 00:00:00+00:00",
+      "seconds": 0.3062273749965243
+    },
+    {
+      "entity": "76",
+      "track": "calendar",
+      "forecast_start": "2024-09-22 00:00:00+00:00",
+      "seconds": 0.30571070802398026
+    },
+    {
+      "entity": "76",
+      "track": "calendar",
+      "forecast_start": "2024-10-08 00:00:00+00:00",
+      "seconds": 0.30670345900580287
+    },
+    {
+      "entity": "76",
+      "track": "calendar",
+      "forecast_start": "2024-10-22 00:00:00+00:00",
+      "seconds": 0.3058188330032863
+    },
+    {
+      "entity": "93",
+      "track": "calendar",
+      "forecast_start": "2024-01-08 00:00:00+00:00",
+      "seconds": 0.3088788330205716
+    },
+    {
+      "entity": "93",
+      "track": "calendar",
+      "forecast_start": "2024-01-22 00:00:00+00:00",
+      "seconds": 0.30720791599014774
+    },
+    {
+      "entity": "93",
+      "track": "calendar",
+      "forecast_start": "2024-02-08 00:00:00+00:00",
+      "seconds": 0.3080068329581991
+    },
+    {
+      "entity": "93",
+      "track": "calendar",
+      "forecast_start": "2024-02-22 00:00:00+00:00",
+      "seconds": 0.3080147919827141
+    },
+    {
+      "entity": "93",
+      "track": "calendar",
+      "forecast_start": "2024-03-08 00:00:00+00:00",
+      "seconds": 0.30841620900901034
+    },
+    {
+      "entity": "93",
+      "track": "calendar",
+      "forecast_start": "2024-03-22 00:00:00+00:00",
+      "seconds": 0.30880929203704
+    },
+    {
+      "entity": "93",
+      "track": "calendar",
+      "forecast_start": "2024-04-08 00:00:00+00:00",
+      "seconds": 0.30763779097469524
+    },
+    {
+      "entity": "93",
+      "track": "calendar",
+      "forecast_start": "2024-04-22 00:00:00+00:00",
+      "seconds": 0.3071993750054389
+    },
+    {
+      "entity": "93",
+      "track": "calendar",
+      "forecast_start": "2024-05-08 00:00:00+00:00",
+      "seconds": 0.3081648329971358
+    },
+    {
+      "entity": "93",
+      "track": "calendar",
+      "forecast_start": "2024-05-22 00:00:00+00:00",
+      "seconds": 0.30778804200235754
+    },
+    {
+      "entity": "93",
+      "track": "calendar",
+      "forecast_start": "2024-06-08 00:00:00+00:00",
+      "seconds": 0.3079646250116639
+    },
+    {
+      "entity": "93",
+      "track": "calendar",
+      "forecast_start": "2024-06-22 00:00:00+00:00",
+      "seconds": 0.30731337500037625
+    },
+    {
+      "entity": "93",
+      "track": "calendar",
+      "forecast_start": "2024-07-08 00:00:00+00:00",
+      "seconds": 0.30769037501886487
+    },
+    {
+      "entity": "93",
+      "track": "calendar",
+      "forecast_start": "2024-07-22 00:00:00+00:00",
+      "seconds": 0.31135070900199935
+    },
+    {
+      "entity": "93",
+      "track": "calendar",
+      "forecast_start": "2024-08-08 00:00:00+00:00",
+      "seconds": 0.3076712089823559
+    },
+    {
+      "entity": "93",
+      "track": "calendar",
+      "forecast_start": "2024-08-22 00:00:00+00:00",
+      "seconds": 0.3080985840060748
+    },
+    {
+      "entity": "93",
+      "track": "calendar",
+      "forecast_start": "2024-09-08 00:00:00+00:00",
+      "seconds": 0.3070840840227902
+    },
+    {
+      "entity": "93",
+      "track": "calendar",
+      "forecast_start": "2024-09-22 00:00:00+00:00",
+      "seconds": 0.30818258301587775
+    },
+    {
+      "entity": "93",
+      "track": "calendar",
+      "forecast_start": "2024-10-08 00:00:00+00:00",
+      "seconds": 0.30761349998647347
+    },
+    {
+      "entity": "93",
+      "track": "calendar",
+      "forecast_start": "2024-10-22 00:00:00+00:00",
+      "seconds": 0.3076432080124505
+    }
+  ],
+  "runtime": {
+    "max_context": 32768,
+    "per_shot_horizon_patches": 32
+  }
+}

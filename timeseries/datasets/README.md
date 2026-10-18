@@ -1,55 +1,85 @@
-# Reference datasets and forecast cycles
+# Datasets and experiment contract
 
-Public-data samples retrieved **2026-10-17** are included so every model uses identical inputs. Upstream data can be revised; these CSVs remain the reference.
+Start with the shared evaluation notebook. Read the target and information boundary, inspect baselines, then compare saved forecasts. Entity/date controls change only the worked example; model selection filters displayed participants without changing any scores. The default view shows weather, target-only inputs, Chronos-2, Timestral-5M, and baselines. Expand optional sections for other tracks, checkpoints, uncertainty, diagnostics, and cost. Selecting an input track selects a distinct declared experiment over the same eligible windows.
 
-| Sample | Included period | History per forecast | Horizon | Evaluation cycles | Seasonal baseline |
-|---|---|---|---|---|---|
-| `strasbourg_daily.csv` | 2023–2025, 1,096 daily rows | 730 days | 7 days | Last 7 days of every month in 2025: 12 cycles | Lag 365 days |
-| `bikes_2hourly.csv` | 2011–2012, 8,772 two-hour rows | 365 days / 4,380 steps | 24 hours / 12 steps | Last complete day of each month in 2012: 12 cycles | Lag 84 steps / 1 week |
-| `retail_monthly.csv` | 2014–2025, 144 monthly rows | 120 months | 6 months | January and July starts in 2024 and 2025: 4 cycles | Lag 12 months |
+| Task ID | Target | History | Horizon | Windows per track | Data card |
+| --- | --- | ---: | ---: | ---: | --- |
+| `weather-daily-7-v1` | Daily maximum temperature, °C | 730 days | 7 days | 12 exploratory | [Weather](weather.md) |
+| `bikes-2hourly-12-v1` | Rentals per two-hour bin | 4,380 bins | 12 bins | 12 exploratory | [Bikes](bikes.md) |
+| `retail-monthly-6-v1` | Monthly revenue, million USD | 120 months | 6 months | 4 exploratory | [Retail](retail.md) |
+| `rte-hourly-24-v1` | Regional mean hourly demand, MW | 1,344 hours | 24 hours | 120 development | [RTE](rte.md) |
 
-`cycles.csv` records each forecast start, history length, horizon, seasonal lag, and frequency. Both model scripts and the evaluation notebook read this schedule. February's bike cycle starts on **2012-02-28**; the other bike cycles use the month's final day. Retail cycles cover four separate half-years without overlap.
+Previously inspected weather/bikes/retail dates were formerly labeled `evaluation`; they are now explicitly **exploratory**. The source CSVs, forecast dates, histories, and horizons are preserved. RTE retains 126 reserved 2025 windows; no command in the model exporters unlocks them. The shared schedule includes task IDs and remains readable CSV.
 
-## Sources and preparation
+## Information tracks
 
-- **Weather:** [Open-Meteo Historical Weather API](https://open-meteo.com/en/docs/historical-weather-api), explicitly selecting **ERA5**, latitude **48.58392**, longitude **7.74553**, and `Europe/Paris` calendar days. This is gridded reanalysis near Strasbourg, not a local station's measurements. Target: `temperature_2m_max`, °C. Past-only covariates: `precipitation_sum` (mm/day) and `wind_speed_10m_max` (km/h). Known covariate: numeric day-of-year. Attribution: Open-Meteo and Copernicus Climate Change Service/ECMWF ERA5; [CC BY 4.0](https://open-meteo.com/en/terms).
-- **Bikes:** [UCI Bike Sharing](https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset), Fanaee-T, H. (2013), [DOI: 10.24432/C5W894](https://doi.org/10.24432/C5W894), CC BY 4.0. Start with `hour.csv`, reindex missing hours, then use left-labeled two-hour bins: target is the sum of both `cnt` values; `temp`, `hum`, and `windspeed` are their means in the source's normalized units. If either hourly row is incomplete, the entire bin stays missing. There are **121 missing bins** across the two-year sample. Each timestamp labels `[timestamp, timestamp + 2 hours)` using source local clock labels without timezone conversion. Two-hour frequency fits a full year within [Chronos-2's 8,192-observation limit](https://huggingface.co/amazon/chronos-2). Known covariates are the starting hour and weekday (Monday=0). Exclude `casual` and `registered`, which compose the target. Evaluation days have all 24 original hours present. The notebook's overview shows daily totals only when all 12 bins are complete; inference always uses two-hour values.
-- **Retail:** U.S. Census Bureau, [Retail Sales: Retail Trade, MRTSSM44000USN](https://fred.stlouisfed.org/series/MRTSSM44000USN), retrieved through FRED, Federal Reserve Bank of St. Louis. Target: monthly nominal million USD, **not seasonally adjusted**; revenue is a demand proxy rather than unit sales. Month-start timestamps label the entire month's total. Known covariate: numeric month-of-year. U.S. Census source data are public domain; retain this attribution. Later releases can revise observations.
+`target_only` uses target history. `calendar` adds historical and future numeric calendar values. `past_observed` adds historical observed weather only. `past_observed_calendar` combines those two additions. Weather and bikes have all four; retail and RTE have only the first two. RTE's hour/weekday use Europe/Paris, while observations and forecast origins remain UTC. No encoding selection is performed on the outcomes.
 
-## Comparison and ranking rules
+Each model receives one entity at a time and the same complete declared context/horizon. Future targets and future observed weather never enter the adapter interface. Missing history stays distinct from zero. Bikes use native library handling; RTE requires complete historical and held-out targets. Later origins can use newly observed actuals from earlier windows.
 
-At each cycle, every model receives the same fixed-length trailing history and forecast horizon. Later cycles use actual observations available before their start, including observations from earlier evaluation windows. No fitting occurs and previous predictions never become history. Calendar covariates are calculated from timestamps; only these known features extend into the future. Held-out targets and observed future weather never enter inference. Missing historical bike bins remain explicit; each model retains its native missing-value behavior.
+## Saved results
 
-The seasonal naïve baseline uses only history at the listed lag. If a reference is missing, use the most recent earlier season at the same phase. Stop clearly if no valid reference exists. Model-specific inference defaults remain enabled, including Timestral's symmetric averaging and automatic nonnegative clipping. Requested histories are checked against each checkpoint's context limit to prevent truncation.
+Schema-v5 bundles live in `timeseries/results/<task>/<split>/<model>/`, with `predictions.csv` and `metadata.json`. Prediction CSVs identify entity, track, origin, timestamp, step, actual, point, and point interpretation; p10/p50/p90 are optional. Model IDs identify participants; names are display labels.
 
-Metrics use the median forecast and are calculated **within each cycle first**:
+Metadata records a semantic `task_contract`, source/prediction hashes, the selected schedule, one static model specification, checkpoint/library/lockfile provenance, observed runtime limits and decoding settings, hardware, and per-window timings. `model` identifies the requested configuration; `runtime` records observations from the loaded checkpoint without duplicating that specification. Historical environment hashes describe the original runs, even after packaging changes. Labels and Python formatting do not affect compatibility. Shared input-behavior changes require an explicit `INPUT_VERSION` increment.
 
-- **MAE:** mean absolute error, in the target's units.
-- **Bias:** mean forecast minus actual; positive means overforecasting.
-- **Demand MAE (%):** `100 × sum(abs(forecast − actual)) / sum(actual)`.
-- **Demand Bias (%):** `100 × sum(forecast − actual) / sum(actual)`.
-- **[Vandeput score (%)](https://supchains.com/vn1-forecasting-competition/):** `MAE (%) + abs(Bias (%))`.
+The schedule contains only `task`, `entity`, `forecast_start`, and `split`; task declarations supply lengths, frequency, and seasonal period. Several tasks can share a dataset. Preparation scripts replace only their own task IDs.
 
-The ranked tables report arithmetic means of per-cycle metrics, with every cycle weighted equally. Weather ranks by mean cycle MAE in °C; bikes and retail rank by mean cycle score. Apply the absolute bias penalty **before** averaging, so opposite biases in different cycles do not cancel that penalty. The baseline appears once alongside every model/mode combination. Sort unrounded values ascending; exact ties share a rank.
+A model/task bundle is published only after all declared tracks succeed. The first inference or validation failure raises a contextual error and leaves previous results untouched. Staging validation and interruption recovery protect replacement; smoke outputs remain temporary and cannot enter comparisons. The included metadata was migrated from v4 to v5 offline without rewriting forecasts. Only v5 is supported. Context exceeding a loaded model's limit raises an error before inference; inputs are never silently truncated.
 
-MAE (%) divides total absolute error by total demand; it is not MAPE. Percentage metrics require nonnegative actuals and positive total demand. Undefined cycle metrics remain undefined in the aggregate and sort last; never silently average fewer cycles. Weather has **no score or percentage metrics**, because [Celsius has an arbitrary zero](https://otexts.com/fpp3/accuracy.html). There are no baseline-relative scores, cross-dataset averages, or overall model rankings.
+## Baselines and scores
 
-Bands are native 10th–90th percentile forecasts, not guaranteed coverage. Inference timings record each CPU call separately, excluding downloads and model loading, without warm-up or repeated trials. The notebook summarizes call count, mean duration, and total duration. Seasonal cycles demonstrate behavior rather than general model quality. Public data can overlap pretraining; ERA5 and revised retail data are retrospective sources rather than real-time data vintages.
+Persistence repeats the last finite observation. Seasonal naïve repeats the latest historical pattern and falls back to earlier nonmissing values at the same phase. Four-week averages use available values among exactly four weekly references. Horizons longer than a season repeat historical phases without indexing test outcomes. A missing reference gives an undefined prediction, never a fabricated zero.
 
-## Refresh samples and results
+Weather uses annual lag 365; bikes weekly lag 84; retail annual lag 12; RTE has daily lag 24 and weekly lag 168. Seasonal naïve is the fixed reference for the first three tasks; weekly naïve is RTE's reference.
+
+MAE is the main score for the three teaching tasks; RTE ranks by MASE. Signed bias is forecast minus actual. MASE divides window MAE by mean absolute seasonal differences in the permitted history, using finite historical pairs. No pairs or a zero scale make scaled scores undefined. Average origins within each entity, then entities equally; undefined values propagate.
+
+Improvement is `100 × (1 − aggregate model score / aggregate reference score)` on matching windows, using the task's named primary metric. Zero reference scores produce undefined percentages. Related timestamps and regions are not independent trials.
+
+For supported quantiles, the 80% interval score is `width + 10 × lower_miss + 10 × upper_miss`; WIS is `(0.5 × absolute_median_error + 0.1 × interval_score) / 1.5`. Lower is better. Also show scaled WIS, marginal 80% coverage, and interval width. Point-only models and deterministic baselines remain valid point participants. Coverage is not guaranteed, and daily quantiles cannot simply be summed into a valid total-uncertainty band.
+
+## Reproduce
 
 From the repository root:
 
 ```sh
-uv run --project timeseries/chronos2 python timeseries/datasets/prepare.py
-uv run --project timeseries/chronos2 python timeseries/chronos2/evaluate.py
-uv run --project timeseries/timestral python timeseries/timestral/evaluate.py
+# Included data/results only; no model libraries or weights.
+uv run --project timeseries marimo edit timeseries/evaluation.py
+
+# Check contracts without model dependencies.
+uv run --project timeseries python -m unittest discover -s timeseries/tests -v
+
+# Smoke every selected task/track before refreshing (temporary outputs).
+uv run --project timeseries/chronos2 python timeseries/chronos2/evaluate.py --smoke
+uv run --project timeseries/timestral python timeseries/timestral/evaluate.py --size all --smoke
+
+# Full refresh: Chronos-2 and all four Timestral sizes.
+uv run --project timeseries/chronos2 python timeseries/chronos2/evaluate.py --suite showcase --refresh
+uv run --project timeseries/timestral python timeseries/timestral/evaluate.py --suite showcase --size all --refresh
+
+# One task, or the original three teaching tasks; Timestral defaults to 5M.
+uv run --project timeseries/timestral python timeseries/timestral/evaluate.py --task rte-hourly-24-v1
+uv run --project timeseries/chronos2 python timeseries/chronos2/evaluate.py --suite teaching
+
+# Validate all available bundles and regenerate documentation from saved outputs.
+uv run --project timeseries python -m foundation_timeseries.results --markdown timeseries/results/README.md
+
+# Explicit source refresh, separate from inference and notebook viewing.
+uv run --project timeseries python timeseries/datasets/prepare.py
+uv run --project timeseries python timeseries/datasets/prepare_rte.py
 ```
 
-Preparation downloads the official sources, validates the windows, and overwrites the three samples and schedule. Review changes and update the retrieval date before committing a refresh. Changed data or schedules invalidate the saved predictions. Normal notebook use makes no data requests.
+`--task` is repeatable and mutually exclusive with `--suite`. The default suite is `showcase`; `teaching` is the explicit `TEACHING_TASKS` list. Matching complete bundles are skipped unless `--refresh` is supplied. Timestral accepts `5M`, `28M`, `123M`, `209M`, or `all`. CPU thread settings can be controlled through `OMP_NUM_THREADS`/`MKL_NUM_THREADS`; effective Torch threads and hardware are recorded. Inference timings exclude loading/downloads and are not controlled latency benchmarks.
 
-The Timestral command evaluates all four sizes sequentially in one environment; append `--size 28M` to refresh only that size (also accepts `5M`, `123M`, and `209M`). Each checkpoint loads once for **56 inference calls**, producing **504 forecast rows**. Across all five models, that is **280 calls** and **2,520 rows**. Keep the small result CSVs and JSON metadata in Git; environments, model weights, and caches stay outside Git.
+The full declared refresh is 1,720 calls and 33,600 prediction rows across 20 task/model bundles, excluding smoke calls. [Generated tables](../results/README.md) report measured outcomes. To extend the showcase, follow the definitions and adapters described below.
 
-Each model's result CSV contains `dataset`, `mode`, `forecast_start`, `timestamp`, one-based `step`, `actual`, `baseline`, `p10`, `p50`, and `p90`. Version **2** JSON metadata records the checkpoint revision, model-library version, generation time, CPU/dtype, dataset checksums, cycle schedule and checksum, prediction checksum, and durations by dataset/mode/forecast start. Files remain `chronos2.csv`/`.json` and `timestral-{5m,28m,123m,209m}.csv`/`.json` under `timeseries/results/`.
+## Extend the showcase
 
-The presentation environment has no model libraries. The evaluation notebook checks completeness, timestamps, actuals, historical baselines, quantiles, schema version, and checksums. Missing, stale, or old single-holdout results stop comparisons and show refresh commands. Each section includes the period overview, all-cycle rankings, performance by cycle, and a selector for detailed forecasts. Selecting a cycle never changes aggregate rankings or triggers inference. The final recap lists winners separately by dataset.
+The shared package lives directly under `timeseries/foundation_timeseries/`; no `src/` directory or import-path setup is needed after uv installs the editable dependency.
+
+For another dataset, add a CSV and a source card, declare its `DatasetSpec` and `TaskSpec` in `tasks.py`, and add fixed origins to `cycles.csv`. Keep the source and task separate: several forecasting questions can use the same dataset. Baselines are labelled callables such as `partial(seasonal_naive, lag=168)`, rather than numeric mode switches.
+
+For another model, follow either family's small adapter: a static `ModelSpec`, observed `runtime` details including `max_context`, and `predict(inputs)` returning a `Prediction`. Each adapter must handle all declared task tracks or fail clearly. Inputs contain target history, past observations, known historical/future covariates, and the horizon; they never contain future target values. Quantiles may be omitted for a point-only model. Keep model-specific array conversion and the native API call together.
+
+The runner follows **history → permitted inputs → prediction → validation → saved results**. `forecast_task` performs inference; `describe_run` records provenance; `write_bundle` stages and validates a complete result before replacing it. The shared metrics need no dataset-name branches. The notebook reads saved results and does not perform inference.

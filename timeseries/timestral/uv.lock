@@ -933,6 +933,25 @@ wheels = [
 ]
 
 [[package]]
+name = "timeseries-evaluation"
+version = "0.1.0"
+source = { editable = "../" }
+dependencies = [
+    { name = "marimo" },
+    { name = "matplotlib" },
+    { name = "numpy" },
+    { name = "pandas" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "marimo", specifier = ">=0.23,<1" },
+    { name = "matplotlib", specifier = ">=3.10,<4" },
+    { name = "numpy", specifier = ">=2,<3" },
+    { name = "pandas", specifier = ">=2.2,<3" },
+]
+
+[[package]]
 name = "timestral"
 version = "1.0.0"
 source = { git = "https://github.com/mistralai/timestral.git?rev=a534bdbd244d64f3d9d743f46c7bf6fc330ed4ff#a534bdbd244d64f3d9d743f46c7bf6fc330ed4ff" }
@@ -952,6 +971,7 @@ dependencies = [
     { name = "matplotlib" },
     { name = "numpy" },
     { name = "pandas" },
+    { name = "timeseries-evaluation" },
     { name = "timestral" },
 ]
 
@@ -961,6 +981,7 @@ requires-dist = [
     { name = "matplotlib", specifier = ">=3.10,<4" },
     { name = "numpy", specifier = ">=2,<3" },
     { name = "pandas", specifier = ">=2.2,<3" },
+    { name = "timeseries-evaluation", editable = "../" },
     { name = "timestral", git = "https://github.com/mistralai/timestral.git?rev=a534bdbd244d64f3d9d743f46c7bf6fc330ed4ff" },
 ]
 

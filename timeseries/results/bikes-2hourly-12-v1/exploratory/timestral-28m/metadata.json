@@ -1,0 +1,473 @@
+{
+  "schema_version": 5,
+  "task_id": "bikes-2hourly-12-v1",
+  "split": "exploratory",
+  "smoke": false,
+  "source_sha256": "5acf3bce28e380715c768347b9fa88315fdc36c17e0ac7f04f8fefdd730b1a1a",
+  "schedule": [
+    {
+      "task": "bikes-2hourly-12-v1",
+      "entity": "single",
+      "forecast_start": "2012-01-31 00:00:00",
+      "split": "exploratory"
+    },
+    {
+      "task": "bikes-2hourly-12-v1",
+      "entity": "single",
+      "forecast_start": "2012-02-28 00:00:00",
+      "split": "exploratory"
+    },
+    {
+      "task": "bikes-2hourly-12-v1",
+      "entity": "single",
+      "forecast_start": "2012-03-31 00:00:00",
+      "split": "exploratory"
+    },
+    {
+      "task": "bikes-2hourly-12-v1",
+      "entity": "single",
+      "forecast_start": "2012-04-30 00:00:00",
+      "split": "exploratory"
+    },
+    {
+      "task": "bikes-2hourly-12-v1",
+      "entity": "single",
+      "forecast_start": "2012-05-31 00:00:00",
+      "split": "exploratory"
+    },
+    {
+      "task": "bikes-2hourly-12-v1",
+      "entity": "single",
+      "forecast_start": "2012-06-30 00:00:00",
+      "split": "exploratory"
+    },
+    {
+      "task": "bikes-2hourly-12-v1",
+      "entity": "single",
+      "forecast_start": "2012-07-31 00:00:00",
+      "split": "exploratory"
+    },
+    {
+      "task": "bikes-2hourly-12-v1",
+      "entity": "single",
+      "forecast_start": "2012-08-31 00:00:00",
+      "split": "exploratory"
+    },
+    {
+      "task": "bikes-2hourly-12-v1",
+      "entity": "single",
+      "forecast_start": "2012-09-30 00:00:00",
+      "split": "exploratory"
+    },
+    {
+      "task": "bikes-2hourly-12-v1",
+      "entity": "single",
+      "forecast_start": "2012-10-31 00:00:00",
+      "split": "exploratory"
+    },
+    {
+      "task": "bikes-2hourly-12-v1",
+      "entity": "single",
+      "forecast_start": "2012-11-30 00:00:00",
+      "split": "exploratory"
+    },
+    {
+      "task": "bikes-2hourly-12-v1",
+      "entity": "single",
+      "forecast_start": "2012-12-31 00:00:00",
+      "split": "exploratory"
+    }
+  ],
+  "model": {
+    "spec": {
+      "id": "timestral-28m",
+      "name": "Timestral-28M",
+      "checkpoint": "mistralai/Timestral-28M",
+      "revision": "180698bbf5a50dda3516aa6419798437fb03a430",
+      "library": "timestral",
+      "environment": "timestral",
+      "quantiles": [
+        0.1,
+        0.5,
+        0.9
+      ],
+      "settings": [
+        [
+          "device",
+          "cpu"
+        ],
+        [
+          "dtype",
+          "float32"
+        ],
+        [
+          "symmetric_averaging",
+          true
+        ],
+        [
+          "clip_nonnegative",
+          true
+        ],
+        [
+          "quantile_real_cap_k",
+          10000.0
+        ],
+        [
+          "per_shot_horizon_patches",
+          "checkpoint default"
+        ]
+      ]
+    },
+    "library_version": "1.0.0",
+    "lockfile_sha256": "37431bd870cfad3093faceb977b4848b226a6d1ea462c8d4f9d18a3c3a8e36fe"
+  },
+  "generated_at": "2026-10-17T21:42:09.676470+00:00",
+  "hardware": {
+    "system": "macOS-27.0.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "processor": "arm",
+    "torch_threads": 1,
+    "torch_version": "2.14.1",
+    "device": "cpu",
+    "dtype": "float32",
+    "entities_per_call": 1
+  },
+  "predictions_sha256": "103286c5e67c29cfb83dc9d9fcfb57ba5be6bc244a49a10ee603ec7289f47ae3",
+  "task_contract": {
+    "input_version": 1,
+    "task": "bikes-2hourly-12-v1",
+    "dataset": "bikes",
+    "history_length": 4380,
+    "horizon": 12,
+    "frequency": "2h",
+    "utc": false,
+    "calendar_timezone": null,
+    "missing_policy": "native",
+    "tracks": {
+      "target_only": [
+        [],
+        []
+      ],
+      "calendar": [
+        [],
+        [
+          "hour",
+          "weekday"
+        ]
+      ],
+      "past_observed": [
+        [
+          "temp",
+          "hum",
+          "windspeed"
+        ],
+        []
+      ],
+      "past_observed_calendar": [
+        [
+          "temp",
+          "hum",
+          "windspeed"
+        ],
+        [
+          "hour",
+          "weekday"
+        ]
+      ]
+    }
+  },
+  "timings": [
+    {
+      "entity": "single",
+      "track": "target_only",
+      "forecast_start": "2012-01-31 00:00:00",
+      "seconds": 0.12185112497536466
+    },
+    {
+      "entity": "single",
+      "track": "target_only",
+      "forecast_start": "2012-02-28 00:00:00",
+      "seconds": 0.11873379198368639
+    },
+    {
+      "entity": "single",
+      "track": "target_only",
+      "forecast_start": "2012-03-31 00:00:00",
+      "seconds": 0.11774912499822676
+    },
+    {
+      "entity": "single",
+      "track": "target_only",
+      "forecast_start": "2012-04-30 00:00:00",
+      "seconds": 0.11762945796363056
+    },
+    {
+      "entity": "single",
+      "track": "target_only",
+      "forecast_start": "2012-05-31 00:00:00",
+      "seconds": 0.1167984579806216
+    },
+    {
+      "entity": "single",
+      "track": "target_only",
+      "forecast_start": "2012-06-30 00:00:00",
+      "seconds": 0.11742387502454221
+    },
+    {
+      "entity": "single",
+      "track": "target_only",
+      "forecast_start": "2012-07-31 00:00:00",
+      "seconds": 0.116572291997727
+    },
+    {
+      "entity": "single",
+      "track": "target_only",
+      "forecast_start": "2012-08-31 00:00:00",
+      "seconds": 0.11786612495779991
+    },
+    {
+      "entity": "single",
+      "track": "target_only",
+      "forecast_start": "2012-09-30 00:00:00",
+      "seconds": 0.11711358302272856
+    },
+    {
+      "entity": "single",
+      "track": "target_only",
+      "forecast_start": "2012-10-31 00:00:00",
+      "seconds": 0.1171646669972688
+    },
+    {
+      "entity": "single",
+      "track": "target_only",
+      "forecast_start": "2012-11-30 00:00:00",
+      "seconds": 0.1163583750021644
+    },
+    {
+      "entity": "single",
+      "track": "target_only",
+      "forecast_start": "2012-12-31 00:00:00",
+      "seconds": 0.11728124995715916
+    },
+    {
+      "entity": "single",
+      "track": "calendar",
+      "forecast_start": "2012-01-31 00:00:00",
+      "seconds": 0.6440804580342956
+    },
+    {
+      "entity": "single",
+      "track": "calendar",
+      "forecast_start": "2012-02-28 00:00:00",
+      "seconds": 0.6438798330491409
+    },
+    {
+      "entity": "single",
+      "track": "calendar",
+      "forecast_start": "2012-03-31 00:00:00",
+      "seconds": 0.6401007500244305
+    },
+    {
+      "entity": "single",
+      "track": "calendar",
+      "forecast_start": "2012-04-30 00:00:00",
+      "seconds": 0.6414284170023166
+    },
+    {
+      "entity": "single",
+      "track": "calendar",
+      "forecast_start": "2012-05-31 00:00:00",
+      "seconds": 0.6410381669993512
+    },
+    {
+      "entity": "single",
+      "track": "calendar",
+      "forecast_start": "2012-06-30 00:00:00",
+      "seconds": 0.6385076669976115
+    },
+    {
+      "entity": "single",
+      "track": "calendar",
+      "forecast_start": "2012-07-31 00:00:00",
+      "seconds": 0.6476923750014976
+    },
+    {
+      "entity": "single",
+      "track": "calendar",
+      "forecast_start": "2012-08-31 00:00:00",
+      "seconds": 0.6466270409873687
+    },
+    {
+      "entity": "single",
+      "track": "calendar",
+      "forecast_start": "2012-09-30 00:00:00",
+      "seconds": 0.23363745800452307
+    },
+    {
+      "entity": "single",
+      "track": "calendar",
+      "forecast_start": "2012-10-31 00:00:00",
+      "seconds": 0.1939380830153823
+    },
+    {
+      "entity": "single",
+      "track": "calendar",
+      "forecast_start": "2012-11-30 00:00:00",
+      "seconds": 0.19228600000496954
+    },
+    {
+      "entity": "single",
+      "track": "calendar",
+      "forecast_start": "2012-12-31 00:00:00",
+      "seconds": 0.18895837501622736
+    },
+    {
+      "entity": "single",
+      "track": "past_observed",
+      "forecast_start": "2012-01-31 00:00:00",
+      "seconds": 0.25126104202354327
+    },
+    {
+      "entity": "single",
+      "track": "past_observed",
+      "forecast_start": "2012-02-28 00:00:00",
+      "seconds": 0.2550308750360273
+    },
+    {
+      "entity": "single",
+      "track": "past_observed",
+      "forecast_start": "2012-03-31 00:00:00",
+      "seconds": 0.2518719590152614
+    },
+    {
+      "entity": "single",
+      "track": "past_observed",
+      "forecast_start": "2012-04-30 00:00:00",
+      "seconds": 0.25181366596370935
+    },
+    {
+      "entity": "single",
+      "track": "past_observed",
+      "forecast_start": "2012-05-31 00:00:00",
+      "seconds": 0.251123333000578
+    },
+    {
+      "entity": "single",
+      "track": "past_observed",
+      "forecast_start": "2012-06-30 00:00:00",
+      "seconds": 0.24971229198854417
+    },
+    {
+      "entity": "single",
+      "track": "past_observed",
+      "forecast_start": "2012-07-31 00:00:00",
+      "seconds": 0.24932483304291964
+    },
+    {
+      "entity": "single",
+      "track": "past_observed",
+      "forecast_start": "2012-08-31 00:00:00",
+      "seconds": 0.25175462500192225
+    },
+    {
+      "entity": "single",
+      "track": "past_observed",
+      "forecast_start": "2012-09-30 00:00:00",
+      "seconds": 0.25136616703821346
+    },
+    {
+      "entity": "single",
+      "track": "past_observed",
+      "forecast_start": "2012-10-31 00:00:00",
+      "seconds": 0.2513491659774445
+    },
+    {
+      "entity": "single",
+      "track": "past_observed",
+      "forecast_start": "2012-11-30 00:00:00",
+      "seconds": 0.25255554105388
+    },
+    {
+      "entity": "single",
+      "track": "past_observed",
+      "forecast_start": "2012-12-31 00:00:00",
+      "seconds": 0.25064483302412555
+    },
+    {
+      "entity": "single",
+      "track": "past_observed_calendar",
+      "forecast_start": "2012-01-31 00:00:00",
+      "seconds": 0.38784129096893594
+    },
+    {
+      "entity": "single",
+      "track": "past_observed_calendar",
+      "forecast_start": "2012-02-28 00:00:00",
+      "seconds": 0.3866822919808328
+    },
+    {
+      "entity": "single",
+      "track": "past_observed_calendar",
+      "forecast_start": "2012-03-31 00:00:00",
+      "seconds": 0.386943917023018
+    },
+    {
+      "entity": "single",
+      "track": "past_observed_calendar",
+      "forecast_start": "2012-04-30 00:00:00",
+      "seconds": 0.38568304100772366
+    },
+    {
+      "entity": "single",
+      "track": "past_observed_calendar",
+      "forecast_start": "2012-05-31 00:00:00",
+      "seconds": 0.38638099998934194
+    },
+    {
+      "entity": "single",
+      "track": "past_observed_calendar",
+      "forecast_start": "2012-06-30 00:00:00",
+      "seconds": 0.3859443750116043
+    },
+    {
+      "entity": "single",
+      "track": "past_observed_calendar",
+      "forecast_start": "2012-07-31 00:00:00",
+      "seconds": 0.38578237500041723
+    },
+    {
+      "entity": "single",
+      "track": "past_observed_calendar",
+      "forecast_start": "2012-08-31 00:00:00",
+      "seconds": 0.3865857500350103
+    },
+    {
+      "entity": "single",
+      "track": "past_observed_calendar",
+      "forecast_start": "2012-09-30 00:00:00",
+      "seconds": 0.3867762079462409
+    },
+    {
+      "entity": "single",
+      "track": "past_observed_calendar",
+      "forecast_start": "2012-10-31 00:00:00",
+      "seconds": 0.3835908750188537
+    },
+    {
+      "entity": "single",
+      "track": "past_observed_calendar",
+      "forecast_start": "2012-11-30 00:00:00",
+      "seconds": 0.38330679200589657
+    },
+    {
+      "entity": "single",
+      "track": "past_observed_calendar",
+      "forecast_start": "2012-12-31 00:00:00",
+      "seconds": 0.3857890830258839
+    }
+  ],
+  "runtime": {
+    "max_context": 32768,
+    "per_shot_horizon_patches": 32
+  }
+}

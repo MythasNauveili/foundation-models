@@ -3,6 +3,7 @@ name = "timestral-playground"
 version = "0.1.0"
 requires-python = ">=3.12,<3.13"
 dependencies = [
+    "timeseries-evaluation",
     "timestral",
     "marimo>=0.23,<1",
     "matplotlib>=3.10,<4",
@@ -12,3 +13,4 @@ dependencies = [
 
 [tool.uv.sources]
 timestral = { git = "https://github.com/mistralai/timestral.git", rev = "a534bdbd244d64f3d9d743f46c7bf6fc330ed4ff" }
+timeseries-evaluation = { path = "..", editable = true }

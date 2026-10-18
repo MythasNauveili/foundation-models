@@ -1,0 +1,165 @@
+{
+  "schema_version": 5,
+  "task_id": "retail-monthly-6-v1",
+  "split": "exploratory",
+  "smoke": false,
+  "source_sha256": "5a92cc2d64dd6a87acb9784ee20e4c696f64cf1c50c1a632fb5c05a422af9ed4",
+  "schedule": [
+    {
+      "task": "retail-monthly-6-v1",
+      "entity": "single",
+      "forecast_start": "2024-01-01 00:00:00",
+      "split": "exploratory"
+    },
+    {
+      "task": "retail-monthly-6-v1",
+      "entity": "single",
+      "forecast_start": "2024-07-01 00:00:00",
+      "split": "exploratory"
+    },
+    {
+      "task": "retail-monthly-6-v1",
+      "entity": "single",
+      "forecast_start": "2025-01-01 00:00:00",
+      "split": "exploratory"
+    },
+    {
+      "task": "retail-monthly-6-v1",
+      "entity": "single",
+      "forecast_start": "2025-07-01 00:00:00",
+      "split": "exploratory"
+    }
+  ],
+  "model": {
+    "spec": {
+      "id": "timestral-5m",
+      "name": "Timestral-5M",
+      "checkpoint": "mistralai/Timestral-5M",
+      "revision": "bdd20cfc15a3fea0e4cb5ccef37f8d3ca7aa335f",
+      "library": "timestral",
+      "environment": "timestral",
+      "quantiles": [
+        0.1,
+        0.5,
+        0.9
+      ],
+      "settings": [
+        [
+          "device",
+          "cpu"
+        ],
+        [
+          "dtype",
+          "float32"
+        ],
+        [
+          "symmetric_averaging",
+          true
+        ],
+        [
+          "clip_nonnegative",
+          true
+        ],
+        [
+          "quantile_real_cap_k",
+          10000.0
+        ],
+        [
+          "per_shot_horizon_patches",
+          "checkpoint default"
+        ]
+      ]
+    },
+    "library_version": "1.0.0",
+    "lockfile_sha256": "37431bd870cfad3093faceb977b4848b226a6d1ea462c8d4f9d18a3c3a8e36fe"
+  },
+  "generated_at": "2026-10-17T21:41:45.792316+00:00",
+  "hardware": {
+    "system": "macOS-27.0.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "processor": "arm",
+    "torch_threads": 1,
+    "torch_version": "2.14.1",
+    "device": "cpu",
+    "dtype": "float32",
+    "entities_per_call": 1
+  },
+  "predictions_sha256": "7a851d5988062664c2d0bb5afbb9dd8592bfdbd5513a4d49da066a211a05da33",
+  "task_contract": {
+    "input_version": 1,
+    "task": "retail-monthly-6-v1",
+    "dataset": "retail",
+    "history_length": 120,
+    "horizon": 6,
+    "frequency": "MS",
+    "utc": false,
+    "calendar_timezone": null,
+    "missing_policy": "native",
+    "tracks": {
+      "target_only": [
+        [],
+        []
+      ],
+      "calendar": [
+        [],
+        [
+          "month"
+        ]
+      ]
+    }
+  },
+  "timings": [
+    {
+      "entity": "single",
+      "track": "target_only",
+      "forecast_start": "2024-01-01 00:00:00",
+      "seconds": 0.004709375032689422
+    },
+    {
+      "entity": "single",
+      "track": "target_only",
+      "forecast_start": "2024-07-01 00:00:00",
+      "seconds": 0.0044466250110417604
+    },
+    {
+      "entity": "single",
+      "track": "target_only",
+      "forecast_start": "2025-01-01 00:00:00",
+      "seconds": 0.004333666991442442
+    },
+    {
+      "entity": "single",
+      "track": "target_only",
+      "forecast_start": "2025-07-01 00:00:00",
+      "seconds": 0.004293583973776549
+    },
+    {
+      "entity": "single",
+      "track": "calendar",
+      "forecast_start": "2024-01-01 00:00:00",
+      "seconds": 0.005925834004301578
+    },
+    {
+      "entity": "single",
+      "track": "calendar",
+      "forecast_start": "2024-07-01 00:00:00",
+      "seconds": 0.005838875018525869
+    },
+    {
+      "entity": "single",
+      "track": "calendar",
+      "forecast_start": "2025-01-01 00:00:00",
+      "seconds": 0.005780957988463342
+    },
+    {
+      "entity": "single",
+      "track": "calendar",
+      "forecast_start": "2025-07-01 00:00:00",
+      "seconds": 0.00575679203029722
+    }
+  ],
+  "runtime": {
+    "max_context": 32768,
+    "per_shot_horizon_patches": 32
+  }
+}
